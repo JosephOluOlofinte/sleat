@@ -1,5 +1,7 @@
 // import React from 'react'
 
+import Logo from '../../assets/img/Logo.png'
+
 const Hero = () => {
   return (
     <section className="
@@ -30,7 +32,54 @@ const Hero = () => {
           flex justify-between items-center
           h-[70px] w-[90%]
           ">
-            <div></div>
+            <div className="
+            #logo+nav
+            flex items-center gap-[25px]
+            laptop:gap-[45px]
+            desktop:gap-[55px]
+            ">
+              <div>
+                <img src={Logo} alt="" className="
+                h-[45px]
+                laptop:h-[55px]
+                "/>
+              </div>
+              <nav>
+                <ul className="
+                #navbar
+                hidden
+                xltablet:flex 
+                desktop:gap-9
+                ">
+                  <li><a href="" className="
+                  py-[12px] px-[20px]
+                  animate-bounce
+                  hover:bg-orange95
+                  ">Home</a></li>
+                  <li><a href="" className="
+                  py-[12px] px-[20px]
+                  animate-bounce
+                  hover:bg-orange95
+                  ">Courses</a></li>
+                  <li><a href="" className="
+                  py-[12px] px-[20px]
+                  animate-bounce
+                  hover:bg-orange95
+                  ">About Us</a></li>
+                  <li><a href="" className="
+                  py-[12px] px-[20px]
+                  animate-bounce
+                  hover:bg-orange95
+                  ">Pricing</a></li>
+                  <li><a href="" className="
+                  py-[12px] px-[20px]
+                  animate-bounce
+                  hover:bg-orange95
+                  ">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
             <div className="
             #buttons
             flex justify-between items-center gap-[15px]
@@ -40,6 +89,7 @@ const Hero = () => {
               <a href="">
                 <button className="
                 h-[45px]
+                laptop:h-[55px]
                 ">Sign Up</button>
               </a>
               <a href="">
@@ -47,10 +97,11 @@ const Hero = () => {
                 bg-orange50
                 rounded-[5px]
                 text-absoluteWhite
-                h-[45px] w-[80px]
+                h-[45px] w-[85px]
+                laptop:h-[55px] laptop:w-[115px]
                 ">Sign In</button>
               </a>
-              <a href="" className="text-right">
+              <a href="" className="xltablet:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-[34px] w-[34px]">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
               </svg>
