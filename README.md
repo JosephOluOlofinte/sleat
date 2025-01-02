@@ -3,3 +3,4 @@
 - UI by: Praha from [Figma Community](https://www.figma.com/@praha)
 - Frontend Technology: React + TypeScript + Vite
 - [GitHub Repository](https://github.com/JosephOluOlofinte/sleat.git) 
+

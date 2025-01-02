@@ -6,16 +6,16 @@ export default {
   ],
   theme: {
     screens: {
-      xs: '320px',
-      sm: '480px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1440px',
+      'mobile': '480px',
+      'smalltab': '640px',
+      'largetab': '768px',
+      'laptop': '1024px',
+      'desktop': '1440px',
     },
     extend: {
       fontFamily: {
-        'titleFont': ['Be Vietnam Pro'],
-        'bodyFont': ['Figtree'],
+        'titleFont': ['Be Vietnam Pro', 'sans-serif',],
+        'bodyFont': ['Figtree', 'sans-serif',],
       },
       colors: {
         'orange50': '#FF9500',
@@ -38,6 +38,8 @@ export default {
         'grey40': '#656567',
         'grey60': '#98989A',
         'grey70': '#B3B3B3',
+        'absoluteWhite': '#ffffff',
+        'absoluteBlack': '#000000',
       },
 
       backgroundImage: {
@@ -47,3 +49,4 @@ export default {
   },
   plugins: [],
 }
+

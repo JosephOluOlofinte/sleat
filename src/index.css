@@ -7,7 +7,6 @@
     h1 {
         font-size: 28px;
         @apply font-titleFont;
-        @apply text-titleBlue;
     }
 
     h2 {
@@ -38,6 +37,5 @@
     body {
         @apply font-bodyFont;
         font-size: 14px;
-        @apply text-textBlue
     }
 }
