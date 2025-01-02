@@ -36,6 +36,23 @@
 
     body {
         @apply font-bodyFont;
-        font-size: 14px;
+        font-size: 0.9rem;
+    }
+
+    
+}
+
+@media (min-width: 768px) {
+
+    body {
+        font-size: 1rem;
     }
 }
+
+@media (min-width: 1440px) {
+
+    body {
+        font-size: 1.13rem;
+    }
+}
+

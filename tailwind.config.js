@@ -6,9 +6,9 @@ export default {
   ],
   theme: {
     screens: {
-      'mobile': '480px',
-      'smalltab': '640px',
-      'largetab': '768px',
+      'xlmobile': '480px',
+      'tablet': '640px',
+      'xltablet': '768px',
       'laptop': '1024px',
       'desktop': '1440px',
     },
