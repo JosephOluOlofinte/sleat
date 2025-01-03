@@ -56,26 +56,31 @@ const Hero = () => {
                   py-[12px] px-[20px]
                   animate-bounce
                   hover:bg-orange95
+                  ease-in-out duration-500 rounded-[5px]
                   ">Home</a></li>
                   <li><a href="" className="
                   py-[12px] px-[20px]
                   animate-bounce
                   hover:bg-orange95
+                  ease-in-out duration-500 rounded-[5px]
                   ">Courses</a></li>
                   <li><a href="" className="
                   py-[12px] px-[20px]
                   animate-bounce
                   hover:bg-orange95
+                  ease-in-out duration-500 rounded-[5px]
                   ">About Us</a></li>
                   <li><a href="" className="
                   py-[12px] px-[20px]
                   animate-bounce
                   hover:bg-orange95
+                  ease-in-out duration-500 rounded-[5px]
                   ">Pricing</a></li>
                   <li><a href="" className="
                   py-[12px] px-[20px]
                   animate-bounce
                   hover:bg-orange95
+                  ease-in-out duration-500 rounded-[5px]
                   ">Contact</a></li>
                 </ul>
               </nav>
@@ -118,87 +123,103 @@ const Hero = () => {
         // Hero section
         flex justify-center
         h-[calc(100vh-130px)]
+        pt-[80px]
         ">
           <div className="
           #hero-container
-          flex flex-col items-center gap-[30px]
-          w-[90%]
-          pt-[80px]
+          bg-absoluteWhite
+          flex flex-col items-center gap-[20px]
+          text-center
+          w-[90%] h-max
           ">
-            <div className="
-            #unlock-potential
-            bg-white99
-            border border-white95 rounded-lg
-            flex justify-center items-center 
-            gap-[15px]
-            xltablet:gap-[20px]
-            desktop:gap-[25px]
-            p-[14px]
-            xltablet:px-[20px]
-            desktop:px-[25px]
-            ">
-              <div className='
-              bg-orange95
-              flex justify-center items-center
-              h-[50px] w-[50px]
-              xltablet:h-[55px] xltablet:w-[55px]
-              desktop:h-[65px] desktop:w-[65px] 
-              '>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 xltablet:size-7 desktop:size-[35px]">
-                <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-                </svg>
-              </div>
-              <h1 className='
-              text-grey10 text-[14px] 
-              mobile:text-[1.1rem]
-              xlmobile:text-[22px]
-              tablet:text-[30px]
-              xltablet:text-[36px]
-              laptop:text-[42px]
-              desktop:text-[48px]
-              font-semibold 
-              '>
-                <span className='text-orange50'>Unlock</span> Your Creative Potential
-              </h1>
-            </div>
-              <p className='
-              text-grey15 text-[14px] 
-              mobile:text-[17px]
-              xlmobile:text-[20px]
-              tablet:text-[26px]
-              xltablet:text-[32px]
-              laptop:text-[36px]
-              desktop:text-[42px]
-              font-medium
-              '>with online design and development courses.</p>
-            <small className='
-              text-grey15 text-center text-[15px] 
-              mobile:text-[17px]
-              xlmobile:text-[20px]
-              tablet:text-[26px]
-              xltablet:text-[32px]
-              laptop:text-[36px]
-              desktop:text-[42px]
-              w-[30ch]
-              xltablet:w-auto
-              '>...learn from industry experts and enhance your skills.</small>
 
             <div>
-              <a href="">
-                <button className="
-              bg-orange50
-                rounded-[5px]
-              text-absoluteWhite
-                h-[45px] w-[85px]
-                laptop:h-[50px] laptop:w-[100px]
-                ">Sign In</button>        
-              </a>
-              <a href="">
-                <button className="
-                h-[45px]
-                laptop:h-[55px]
-                ">Sign Up</button>
-              </a>
+              <div className="
+              #unlock-potential
+              bg-white99
+              border border-white95 rounded-lg
+              flex justify-center items-center 
+              gap-[15px]
+              xltablet:gap-[20px]
+              desktop:gap-[25px]
+              p-[14px]
+              xltablet:px-[20px]
+              desktop:px-[25px]
+              ">
+                <div className='
+                bg-orange95
+                flex justify-center items-center
+                h-[45px] w-[45px]
+                xltablet:h-[55px] xltablet:w-[55px]
+                desktop:h-[65px] desktop:w-[65px] 
+                '>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 xltablet:size-7 desktop:size-[35px]">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                  </svg>
+                </div>
+                <h1 className='
+                text-grey10 text-[16px] 
+                mobile:text-[18px]
+                xlmobile:text-[22px]
+                tablet:text-[28px]
+                xltablet:text-[32px]
+                laptop:text-[36px]
+                desktop:text-[40px]
+                font-semibold 
+                '>
+                  <span className='text-orange50'>Unlock</span> Your Creative Potential
+                </h1>
+              </div>
+                <p className='
+                text-grey15 text-[14px] 
+                mobile:text-[17px]
+                xlmobile:text-[18px]
+                tablet:text-[22px]
+                xltablet:text-[26px]
+                laptop:text-[30px]
+                desktop:text-[34px]
+                font-medium
+                '>with online design and development courses.</p>
+              <small className='
+                text-grey15 text-center text-[12px] 
+                mobile:text-[14px]
+                xlmobile:text-[16px]
+                tablet:text-[18px]
+                xltablet:text-[20px]
+                laptop:text-[22px]
+                desktop:text-[24px]
+                w-[30ch]
+                xltablet:w-auto
+                '>...learn from industry experts and enhance your skills.
+              </small>
+            </div>
+
+            <div>
+              <div className='
+              #hero-buttons
+              flex items-center gap-[10px]
+              '>
+                <a href="">
+                  <button className="
+                bg-orange50
+                  rounded-[5px]
+                  text-[14px]
+                text-absoluteWhite
+                  font-semibold
+                  py-[14px] px-[20px]
+                  ">Explore Courses</button>        
+                </a>
+                <a href="">
+                  <button className="
+                  rounded-[5px]
+                  text-[15px]
+                  font-semibold
+                  py-[14px] px-[20px]
+                  hover:border-[1px] hover:border-orange50
+                  ease-in-out duration-500
+                  ">View Pricing</button>
+                </a>
+              </div>
             </div>
           </div>  
         </main>
