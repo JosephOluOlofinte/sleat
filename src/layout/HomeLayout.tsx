@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import { Header } from "../components"
 import HomeComp from "../pages/home/HomeComp"
 
 
@@ -8,7 +9,8 @@ import HomeComp from "../pages/home/HomeComp"
 const HomeLayout = () => {
   return (
     <div>
-        <HomeComp/>
+      <Header />
+      <HomeComp/>
     </div>
   )
 }
