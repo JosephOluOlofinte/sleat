@@ -128,12 +128,17 @@ const Hero = () => {
           <div className="
           #hero-container
           bg-absoluteWhite
-          flex flex-col items-center gap-[20px]
+          rounded-lg
+          flex flex-col items-center gap-[60px]
           text-center
           w-[90%] h-max
+          py-[5px]
           ">
 
-            <div>
+            <div className='
+            flex flex-col gap-[18px]
+            items-center
+            '>
               <div className="
               #unlock-potential
               bg-white99
@@ -142,7 +147,8 @@ const Hero = () => {
               gap-[15px]
               xltablet:gap-[20px]
               desktop:gap-[25px]
-              p-[14px]
+              py-[14px]
+              pl-[7px] pr-[20px]
               xltablet:px-[20px]
               desktop:px-[25px]
               ">
@@ -170,28 +176,29 @@ const Hero = () => {
                   <span className='text-orange50'>Unlock</span> Your Creative Potential
                 </h1>
               </div>
+              <div className='
+              flex flex-col gap-[8px]
+              items-center
+              '>
                 <p className='
-                text-grey15 text-[14px] 
-                mobile:text-[17px]
-                xlmobile:text-[18px]
-                tablet:text-[22px]
+                text-grey15 text-[18px] 
+                mobile:text-[20px]
+                xlmobile:text-[22px]
+                tablet:text-[24px]
                 xltablet:text-[26px]
                 laptop:text-[30px]
                 desktop:text-[34px]
-                font-medium
+                font-bold
+                max-w-[30ch]
                 '>with online design and development courses.</p>
-              <small className='
-                text-grey15 text-center text-[12px] 
-                mobile:text-[14px]
-                xlmobile:text-[16px]
-                tablet:text-[18px]
-                xltablet:text-[20px]
-                laptop:text-[22px]
-                desktop:text-[24px]
-                w-[30ch]
-                xltablet:w-auto
-                '>...learn from industry experts and enhance your skills.
-              </small>
+                <small className='
+                  text-grey35 text-[12px] 
+                  xlmobile:text-[16px]
+                  tablet:text-[18px]
+                  xltablet:w-auto
+                  '>...learn from industry experts and enhance your skills.
+                </small>
+              </div>
             </div>
 
             <div>
