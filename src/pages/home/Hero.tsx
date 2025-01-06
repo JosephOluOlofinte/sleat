@@ -130,10 +130,11 @@ const Hero = () => {
       </div>
 
       <div className="#scrolling-bar flex justify-center items-center overflow-hidden pt-[70px]">
-        <div className="whitespace-nowrap bg-absoluteWhite overflow-hidden relative w-[90%] desktop:w-[80%]">
-          <span className='bg-orange-500 block absolute top-0 left-0 h-full w-[40px]'></span>
+
+        <div id='slider-box' className="whitespace-nowrap bg-absoluteWhite overflow-hidden relative w-[90%] desktop:w-[80%]">
+          <span className='bg-gradient-to-r from-absoluteWhite block absolute top-0 left-0 h-[100%] w-[150px] z-10'></span>
           
-          <div className='inline-block whitespace-nowrap animate-hero-slide py-[30px] px-[50px]'>
+          <div id='slider' className='inline-block whitespace-nowrap animate-hero-slide py-[30px] px-[50px]'>
             <img src={zapier} alt="" className='inline-block h-[35px] pr-[95px] opacity-75'/>
             <img src={spotify} alt="" className='inline-block h-[30px] pr-[95px] opacity-75'/>
             <img src={zoom} alt="" className='inline-block h-[25px] pr-[95px] opacity-75'/>
@@ -145,7 +146,11 @@ const Hero = () => {
             <img src={trello} alt="" className='inline-block h-[30px] pr-[95px] opacity-75'/>
             <img src={andela} alt="" className='inline-block h-[30px] pr-[95px] opacity-75'/>
           </div>
-          <span className='bg-grey30 block absolute h-full w-[40px] z-[1000]'></span>
+
+          {/* const sliderCopy = document.getElementById('#slider').cloneNode(true);
+          document.getElementById('#slider-box').appendChild(sliderCopy); */}
+
+          <span className='bg-gradient-to-l from-absoluteWhite  block absolute top-0 right-0 h-[100%] w-[50px]'></span>
         </div>
       </div>
 
