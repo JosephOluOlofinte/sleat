@@ -7,6 +7,10 @@ import amazon from '../../assets/img/amazon.png'
 import adobe from '../../assets/img/adobe.png'
 import notion from '../../assets/img/notion.png'
 import netflix from '../../assets/img/netflix.png'
+import fiverr from '../../assets/img/fiverr.png'
+import trello from '../../assets/img/trello.png'
+import andela from '../../assets/img/andela.png'
+
 
 const Hero = () => {
   return (
@@ -25,7 +29,7 @@ const Hero = () => {
           rounded-lg
           flex flex-col items-center gap-[60px]
           text-center
-          w-[90%] h-max
+          w-[90%] desktop:w-[80%] h-max
           py-[5px]
           ">
 
@@ -125,25 +129,23 @@ const Hero = () => {
           </div>  
       </div>
 
-      <div className="
-      #scrolling-bar
-      flex justify-center items-center
-      pt-[70px]
-      ">
-        <div className="
-        flex justify-center items-center gap-[120px]
-        bg-absoluteWhite
-        w-[90%]
-        p-[24px]
-        ">
-          <img src={zapier} alt="" className='h-[28px]'/>
-          <img src={spotify} alt="" className='h-[28px]'/>
-          <img src={zoom} alt="" className='h-[28px]'/>
-          <img src={amazon} alt="" className='h-[28px]'/>
-          <img src={adobe} alt="" className='h-[28px]'/>
-          <img src={notion} alt="" className='h-[28px]'/>
-          <img src={netflix} alt="" className='h-[28px]'/>
-          <img src={zapier} alt="" className='h-[28px]'/>
+      <div className="#scrolling-bar flex justify-center items-center overflow-hidden pt-[70px]">
+        <div className="whitespace-nowrap bg-absoluteWhite overflow-hidden relative w-[90%] desktop:w-[80%]">
+          <span className='bg-orange-500 block absolute top-0 left-0 h-full w-[40px]'></span>
+          
+          <div className='inline-block whitespace-nowrap animate-hero-slide py-[30px] px-[50px]'>
+            <img src={zapier} alt="" className='inline-block h-[35px] pr-[95px] opacity-75'/>
+            <img src={spotify} alt="" className='inline-block h-[30px] pr-[95px] opacity-75'/>
+            <img src={zoom} alt="" className='inline-block h-[25px] pr-[95px] opacity-75'/>
+            <img src={amazon} alt="" className='inline-block h-[27px] pr-[95px] opacity-75'/>
+            <img src={adobe} alt="" className='inline-block h-[28px] pr-[95px] opacity-75'/>
+            <img src={notion} alt="" className='inline-block h-[30px] pr-[95px] opacity-75'/>
+            <img src={netflix} alt="" className='inline-block h-[25px] pr-[95px] opacity-75'/>
+            <img src={fiverr} alt="" className='inline-block h-[25px] pr-[95px] opacity-70'/>
+            <img src={trello} alt="" className='inline-block h-[30px] pr-[95px] opacity-75'/>
+            <img src={andela} alt="" className='inline-block h-[30px] pr-[95px] opacity-75'/>
+          </div>
+          <span className='bg-grey30 block absolute h-full w-[40px] z-[1000]'></span>
         </div>
       </div>
 

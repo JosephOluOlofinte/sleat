@@ -43,9 +43,17 @@ export default {
         'absoluteBlack': '#000000',
       },
 
-      backgroundImage: {
-        'heroBg': "url('/src/assets/images/calculatey.jpg')"
+      keyframes: {
+        slide: {  
+          'from': { transform: 'translateX(0)' },
+          'to': { transform: 'translateX(-100%)' },
+        },
+      },
+
+      animation: {
+        'hero-slide': 'slide 120s linear infinite',
       }
+
     },
   },
   plugins: [],
