@@ -1,15 +1,22 @@
 // import React from 'react'
 
+import zapier from '../../assets/img/zapier.png'
+import spotify from '../../assets/img/spotify.png'
+import zoom from '../../assets/img/zoom.png'
+import amazon from '../../assets/img/amazon.png'
+import adobe from '../../assets/img/adobe.png'
+import notion from '../../assets/img/notion.png'
+import netflix from '../../assets/img/netflix.png'
+
 const Hero = () => {
   return (
     <main className="
     #heroSection
-    max-h[100vh] w-[100%]
+    h-[calc(100vh-130px)] w-[100%]
     ">
       <div className="
         // Hero section
         flex justify-center
-        h-[calc(100vh-130px)]
         pt-[80px]
         ">
           <div className="
@@ -116,6 +123,28 @@ const Hero = () => {
               </div>
             </div>
           </div>  
+      </div>
+
+      <div className="
+      #scrolling-bar
+      flex justify-center items-center
+      pt-[70px]
+      ">
+        <div className="
+        flex justify-center items-center gap-[120px]
+        bg-absoluteWhite
+        w-[90%]
+        p-[24px]
+        ">
+          <img src={zapier} alt="" className='h-[28px]'/>
+          <img src={spotify} alt="" className='h-[28px]'/>
+          <img src={zoom} alt="" className='h-[28px]'/>
+          <img src={amazon} alt="" className='h-[28px]'/>
+          <img src={adobe} alt="" className='h-[28px]'/>
+          <img src={notion} alt="" className='h-[28px]'/>
+          <img src={netflix} alt="" className='h-[28px]'/>
+          <img src={zapier} alt="" className='h-[28px]'/>
+        </div>
       </div>
 
     </main>
