@@ -51,7 +51,7 @@ export default {
       },
 
       animation: {
-        'hero-slide': 'slide 120s linear infinite',
+        'hero-slide': 'slide 80s linear infinite',
       }
 
     },

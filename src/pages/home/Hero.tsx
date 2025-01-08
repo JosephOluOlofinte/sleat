@@ -16,12 +16,12 @@ const Hero = () => {
   return (
     <main className="
     #heroSection
+    flex flex-col justify-center
     h-[calc(100vh-130px)] w-[100%]
     ">
       <div className="
         // Hero section
         flex justify-center
-        pt-[80px]
         ">
           <div className="
           #hero-container
@@ -129,28 +129,42 @@ const Hero = () => {
           </div>  
       </div>
 
-      <div className="#scrolling-bar flex justify-center items-center overflow-hidden pt-[70px]">
+      <div className="#scrolling-bar flex justify-center items-center overflow-hidden mt-[100px]">
 
-        <div id='slider-box' className="whitespace-nowrap bg-absoluteWhite overflow-hidden relative w-[90%] desktop:w-[80%]">
-          <span className='bg-gradient-to-r from-absoluteWhite block absolute top-0 left-0 h-[100%] w-[150px] z-10'></span>
+        <div className="slider-box whitespace-nowrap bg-absoluteWhite overflow-hidden relative w-[90%] desktop:w-[80%]">
+          <span className='bg-gradient-to-r from-absoluteWhite block absolute top-0 left-0 h-[100%] w-[100px] tablet:w-[150px] laptop:w-[200px] z-10'></span>
           
-          <div id='slider' className='inline-block whitespace-nowrap animate-hero-slide py-[30px] px-[50px]'>
-            <img src={zapier} alt="" className='inline-block h-[35px] pr-[95px] opacity-75'/>
-            <img src={spotify} alt="" className='inline-block h-[30px] pr-[95px] opacity-75'/>
-            <img src={zoom} alt="" className='inline-block h-[25px] pr-[95px] opacity-75'/>
-            <img src={amazon} alt="" className='inline-block h-[27px] pr-[95px] opacity-75'/>
-            <img src={adobe} alt="" className='inline-block h-[28px] pr-[95px] opacity-75'/>
-            <img src={notion} alt="" className='inline-block h-[30px] pr-[95px] opacity-75'/>
-            <img src={netflix} alt="" className='inline-block h-[25px] pr-[95px] opacity-75'/>
-            <img src={fiverr} alt="" className='inline-block h-[25px] pr-[95px] opacity-70'/>
-            <img src={trello} alt="" className='inline-block h-[30px] pr-[95px] opacity-75'/>
-            <img src={andela} alt="" className='inline-block h-[30px] pr-[95px] opacity-75'/>
+          <div id='slider' className='inline-block whitespace-nowrap animate-hero-slide animate-paused py-[30px] px-[50px]'>
+            <div className='inline'>
+            <img src={zapier} alt="" className='inline-block h-[30px] xltablet:h-[35px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={spotify} alt="" className='inline-block h-[25px] xltablet:h-[30px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={zoom} alt="" className='inline-block h-[20px] xltablet:h-[25px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={amazon} alt="" className='inline-block h-[22px] xltablet:h-[27px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={adobe} alt="" className='inline-block h-[23px] xltablet:h-[28px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={notion} alt="" className='inline-block h-[25px] xltablet:h-[30px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={netflix} alt="" className='inline-block h-[20px] xltablet:h-[25px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={fiverr} alt="" className='inline-block h-[20px] xltablet:h-[25px] pr-[75px] tablet:pr-[95px] opacity-70'/>
+            <img src={trello} alt="" className='inline-block h-[25px] xltablet:h-[30px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={andela} alt="" className='inline-block h-[25px] xltablet:h-[30px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            </div>
+            <div className='inline'>
+            <img src={zapier} alt="" className='inline-block h-[35px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={spotify} alt="" className='inline-block h-[30px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={zoom} alt="" className='inline-block h-[25px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={amazon} alt="" className='inline-block h-[27px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={adobe} alt="" className='inline-block h-[28px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={notion} alt="" className='inline-block h-[30px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={netflix} alt="" className='inline-block h-[25px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={fiverr} alt="" className='inline-block h-[25px] pr-[75px] tablet:pr-[95px] opacity-70'/>
+            <img src={trello} alt="" className='inline-block h-[30px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            <img src={andela} alt="" className='inline-block h-[30px] pr-[75px] tablet:pr-[95px] opacity-75'/>
+            </div>
           </div>
 
           {/* const sliderCopy = document.getElementById('#slider').cloneNode(true);
           document.getElementById('#slider-box').appendChild(sliderCopy); */}
 
-          <span className='bg-gradient-to-l from-absoluteWhite  block absolute top-0 right-0 h-[100%] w-[50px]'></span>
+          <span className='bg-gradient-to-l from-absoluteWhite  block absolute top-0 right-0 h-[100%] w-[100px] tablet:w-[150px] laptop:w-[200px]'></span>
         </div>
       </div>
 

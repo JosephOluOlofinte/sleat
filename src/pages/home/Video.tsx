@@ -5,14 +5,15 @@ const Video = () => {
     <Fragment>
       <section className='
       #videoSection
-      flex justify-center
-      max-h[100vh] w-[100%]
+      flex justify-center items-start
+      w-[100%]
+      m-0
       '>
         <div className='
-        flex justify-center
+        flex justify-center items-start
         w-[90%]
         '>
-          <video src={homeVideo} className='w-[100%] h-[790px] rounded-[12px]' controls></video>
+          <video src={homeVideo} className='w-[100%] rounded-[12px]'></video>
         </div>
       </section>
     </Fragment>
