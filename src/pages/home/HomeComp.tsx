@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import Benefits from "./Benefits"
 import Hero from "./Hero"
 import Video from "./Video"
 
@@ -10,6 +11,7 @@ const HomeComp = () => {
     <div>
         <Hero />
         <Video />
+        <Benefits />
     </div>
   )
 }
