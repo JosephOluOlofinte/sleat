@@ -13,7 +13,7 @@ const Video = () => {
         flex justify-center items-start
         w-[90%]
         '>
-          <video src={homeVideo} className='w-[100%] rounded-[12px]'></video>
+          <video src={homeVideo} className='w-[100%] rounded-[12px] border-8 border-orange50'></video>
         </div>
       </section>
     </Fragment>

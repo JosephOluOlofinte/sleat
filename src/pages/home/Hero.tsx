@@ -134,7 +134,7 @@ const Hero = () => {
         <div className="slider-box whitespace-nowrap bg-absoluteWhite overflow-hidden relative w-[90%] desktop:w-[80%]">
           <span className='bg-gradient-to-r from-absoluteWhite block absolute top-0 left-0 h-[100%] w-[100px] tablet:w-[150px] laptop:w-[200px] z-10'></span>
           
-          <div id='slider' className='inline-block whitespace-nowrap animate-hero-slide animate-paused py-[30px] px-[50px]'>
+          <div id='slider' className='inline-block whitespace-nowrap animate-hero-slide py-[30px] px-[50px]'>
             <div className='inline'>
             <img src={zapier} alt="" className='inline-block h-[30px] xltablet:h-[35px] pr-[75px] tablet:pr-[95px] opacity-75'/>
             <img src={spotify} alt="" className='inline-block h-[25px] xltablet:h-[30px] pr-[75px] tablet:pr-[95px] opacity-75'/>
