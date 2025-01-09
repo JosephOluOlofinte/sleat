@@ -9,6 +9,7 @@ const Video = () => {
       w-[100%]
       m-0
       '>
+        
         <div className='
         flex justify-center items-start
         w-[90%] h-[650px]'>
