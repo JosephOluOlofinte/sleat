@@ -18,7 +18,7 @@ const OurCourses = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 tablet:grid-cols-2 xltablet:grid-cols-2 grid-rows-1 tablet:grid-rows-3 gap-[20px] mt-[60px]">
+              <div className="grid grid-cols-1 tablet:grid-cols-2 xltablet:grid-cols-2 grid-rows-1 tablet:grid-rows-3 gap-[25px] mt-[60px]">
                 <div className="bg-absoluteWhite h-[550px]">
                   <h1>01</h1>
                   <div></div>
