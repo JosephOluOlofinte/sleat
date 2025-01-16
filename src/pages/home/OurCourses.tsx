@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import { Fragment } from "react/jsx-runtime"
+import Button, { PrimaryButton } from "../../components/block/Button"
 
 
 
@@ -57,6 +58,10 @@ const OurCourses = () => {
 
 
               </div>
+
+
+              <Button variant="primary">Come o ye!</Button>
+              <PrimaryButton/>
             </div>
         </section>
     </Fragment>
