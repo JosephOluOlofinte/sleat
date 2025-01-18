@@ -20,11 +20,23 @@ const Benefits = () => {
               </div>
 
               <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 grid-rows-1 tablet:grid-rows-2 gap-[20px] mt-[60px]">
-                <div className="bg-absoluteWhite h-[370px]">
-                  <h1>01</h1>
-                  <div></div>
-                  <div></div>
+                <div className="bg-absoluteWhite p-[30px] xltablet:p-[40px] desktop:p-[50px] grid gap-[30px] xltablet:gap-[40px] desktop:gap-[50px] ">
+
+                  <h1 className="text-right font-bold text-[50px] bg-red-50 m-0 p-0 ">01</h1>
+
+                  <div className="grid gap-[10px] xltablet:gap-[12px] desktop:gap-[14px]">
+                    <h3>Flexible Learning Schedule</h3>
+                    <p>Fit your coursework around your existing commitments and obligations</p>
+                  </div>
+                  
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                  </div>
+
                 </div>
+
                 <div className="bg-absoluteWhite h-[370px]">
                   <h1>02</h1>
                   <div></div>
