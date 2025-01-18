@@ -20,8 +20,29 @@ const Button: React.FC<ButtonProps> = ({
     onClick,
     className = "",
 }) => {
+
+    // Define base styles
+    const baseStyles = "font-medium rounded focus;ring transition duration-300";
+
+    // Define variant styles
+    const variantStyles: Record<Variant, string> = {
+        primary: "bg-orange50 text-absoluteWhite hover-orange90",
+        secondary: "bg-absoluteWhite text-orange50 focus:ring-orange50",
+        danger: "bg-red-500 text-absoluteWhite hover:bg-red-600 focus:ring-red-300",
+    }
+
+    // Define size styles
+    const sizeStyles: Record<Size, string> = {
+        small: "px-3 py-1 text-sm",
+        medium: "px-4 py-2 text-base",
+        large: "px-5 py-3 text-lg",
+    }
+
+    // combine styles
+    const styles = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
+
   return (
-    <div>Button</div>
+    <button onClick={onClick} className={styles}> {text} </button>
   )
 }
 
