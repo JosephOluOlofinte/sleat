@@ -10,7 +10,7 @@ import BenefitsCard from "../../components/block/BenefitsCard"
 const Benefits = () => {
   return (
     <Fragment>
-        <section className="min-h-[100vh] w-[100%] flex justify-center mt-[70px]">
+        <section className="min-h-[100vh] w-[100%] flex justify-center mt-[100px]">
             <div className="h-[100%] w-[90%] desktop:w-[80%] grid">
               <div className="grid gap-[10px]">
                 <h2 className="font-semibold text-[28px] xltablet:text-[38px] desktop:text-[48px] text-grey15">Benefits</h2>
