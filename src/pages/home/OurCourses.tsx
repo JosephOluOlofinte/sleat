@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import { Fragment } from "react/jsx-runtime"
+import Button from "../../components/block/Button"
 
 
 
@@ -44,7 +45,11 @@ const OurCourses = () => {
 
                 <div className="bg-absoluteWhite h-[550px]">
                   <h1>05</h1>
-                  <div></div>
+                  <div>
+                    <Button text="Primary Button" variant="primary" size="small" />
+                    <Button text="Primary Button" variant="primary" />
+                    <Button text="Primary Button" variant="primary" size="large" />
+                  </div>
                   <div></div>
                 </div>
 
