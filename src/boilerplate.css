@@ -6,5 +6,25 @@ html,
     margin: 0;
     min-width: 0;
     min-height: 0;
+    line-height: 1;
+    font-size: 15px;
 }
 
+p {
+    line-height: 1.5;
+}
+
+
+@media (min-width: 768px) {
+
+    *, p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    *, p {
+        font-size: 18px;
+    }
+}

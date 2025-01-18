@@ -6,11 +6,11 @@ const Video = () => {
       <section className='
       #videoSection
       flex justify-center items-start
-      w-[100%]
+      w-[100%] 
       m-0
       '>
 
-        <div className="flex justify-center items-start w-[90%] h-[650px] bg-orange80">
+        <div className="flex justify-center items-start w-[90%] desktop:w-[80%] h-[650px] bg-orange80">
           
         </div>
       </section>
