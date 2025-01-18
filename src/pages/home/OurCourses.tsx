@@ -14,7 +14,7 @@ const OurCourses = () => {
                 <h2 className="font-semibold text-[32px] text-grey15">Our Courses</h2>
                 <div className="grid xltablet:flex xltablet:justify-between xltablet:items-end ">
                   <p className="xltablet:w-[55ch] laptop:w-[85ch] text-grey35 mt-[5px] pr-[5px] whitespace-break-spaces leading-6 ">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                  <div className="mt-5 xltablet:m-0"><a href="" className="bg-absoluteWhite text-absoluteBlack text-[14px] font-medium inline-block py-[12px] px-[20px] whitespace-nowrap ">View all</a></div>
+                  <div className="mt-5 xltablet:m-0"><Button text="View All" variant="whiteBtn" /></div>
                 </div>
               </div>
 
@@ -46,9 +46,6 @@ const OurCourses = () => {
                 <div className="bg-absoluteWhite h-[550px]">
                   <h1>05</h1>
                   <div>
-                    <Button text="Primary Button" variant="primary" size="small" />
-                    <Button text="Primary Button" variant="primary" />
-                    <Button text="Primary Button" variant="primary" size="large" />
                   </div>
                   <div></div>
                 </div>

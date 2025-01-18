@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-type Variant = "primary" | "secondary" | "danger";
+type Variant = "primary" | "secondary" | "danger" | "whiteBtn";
 type Size = "small" | "medium" | "large";
 
 interface ButtonProps {
@@ -29,6 +29,7 @@ const Button: React.FC<ButtonProps> = ({
         primary: "bg-orange50 text-absoluteWhite hover-orange90",
         secondary: "bg-absoluteWhite text-orange50 focus:ring-orange50",
         danger: "bg-red-500 text-absoluteWhite hover:bg-red-600 focus:ring-red-300",
+        whiteBtn: "bg-absoluteWhite text-absoluteBlack text-[14px] font-medium inline-block py-[12px] px-[20px]"
     }
 
     // Define size styles
