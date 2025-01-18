@@ -22,21 +22,21 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
 
     // Define base styles
-    const baseStyles = "font-medium rounded focus;ring transition duration-300";
+    const baseStyles = "font-medium rounded-[5px] focus;ring transition duration-300";
 
     // Define variant styles
     const variantStyles: Record<Variant, string> = {
-        primary: "bg-orange50 text-absoluteWhite hover-orange90",
-        secondary: "bg-absoluteWhite text-orange50 focus:ring-orange50",
+        primary: "bg-orange50 text-absoluteWhite hover:bg-orange70",
+        secondary: "bg-absoluteWhite hover:border-[1px] hover:border-orange50 ease-in-out duration-500",
         danger: "bg-red-500 text-absoluteWhite hover:bg-red-600 focus:ring-red-300",
-        whiteBtn: "bg-absoluteWhite text-absoluteBlack text-[14px] font-medium inline-block py-[12px] px-[20px]"
+        whiteBtn: "bg-absoluteWhite text-absoluteBlack text-[15px] text-grey15 font-medium inline-block "
     }
 
     // Define size styles
     const sizeStyles: Record<Size, string> = {
-        small: "px-3 py-1 text-sm",
-        medium: "px-4 py-2 text-base",
-        large: "px-5 py-3 text-lg",
+        small: "py-[10px] px-[16px] text-sm font-semibold",
+        medium: "py-[12px] px-[18px] text-base font-semibold",
+        large: "py-[14px] px-[20px] font-semibold text-lg",
     }
 
     // combine styles

@@ -10,6 +10,7 @@ import netflix from '../../assets/img/netflix.png'
 import fiverr from '../../assets/img/fiverr.png'
 import trello from '../../assets/img/trello.png'
 import andela from '../../assets/img/andela.png'
+import Button from '../../components/block/Button'
 
 
 const Hero = () => {
@@ -105,24 +106,10 @@ const Hero = () => {
               flex items-center gap-[10px]
               '>
                 <a href="">
-                  <button className="
-                bg-orange50
-                  rounded-[5px]
-                  text-[14px]
-                text-absoluteWhite
-                  font-semibold
-                  py-[14px] px-[20px]
-                  ">Explore Courses</button>        
+                  <Button text="Explore Courses" size="large" />       
                 </a>
                 <a href="">
-                  <button className="
-                  rounded-[5px]
-                  text-[15px]
-                  font-semibold
-                  py-[14px] px-[20px]
-                  hover:border-[1px] hover:border-orange50
-                  ease-in-out duration-500
-                  ">View Pricing</button>
+                  <Button text="View Pricing" variant="secondary"  size="large" />
                 </a>
               </div>
             </div>

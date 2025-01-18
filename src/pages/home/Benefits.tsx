@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import { Fragment } from "react/jsx-runtime"
+import Button from "../../components/block/Button"
 
 
 
@@ -14,7 +15,7 @@ const Benefits = () => {
                 <h2 className="font-semibold text-[32px] text-grey15">Benefits</h2>
                 <div className="grid xltablet:flex xltablet:justify-between xltablet:items-end ">
                   <p className="xltablet:w-[55ch] laptop:w-[85ch] text-grey35 mt-[5px] pr-[5px] whitespace-break-spaces leading-6 ">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                  <div className="mt-5 xltablet:m-0"><a href="" className="bg-absoluteWhite text-absoluteBlack text-[14px] font-medium inline-block py-[12px] px-[20px] whitespace-nowrap ">View all</a></div>
+                  <div className="mt-5 xltablet:m-0"><Button text="View All" variant="whiteBtn" /></div>
                 </div>
               </div>
 
