@@ -17,12 +17,12 @@ const Hero = () => {
   return (
     <main className="
     #heroSection
-    flex flex-col justify-center
+    grid justify-center
     h-[calc(100vh-130px)] w-[100%]
     ">
       <div className="
         // Hero section
-        flex justify-center
+        flex justify-center items-end pb-[50px]
         ">
           <div className="
           #hero-container
@@ -72,7 +72,12 @@ const Hero = () => {
                 desktop:text-[40px]
                 font-semibold 
                 '>
-                  <span className='text-orange50'>Unlock</span> Your Creative Potential
+                  <span className='text-orange50 mobile:text-[18px]
+                xlmobile:text-[22px]
+                tablet:text-[28px]
+                xltablet:text-[32px]
+                laptop:text-[36px]
+                desktop:text-[40px]'>Unlock</span> Your Creative Potential
                 </h1>
               </div>
               <div className='
@@ -103,7 +108,7 @@ const Hero = () => {
             <div>
               <div className='
               #hero-buttons
-              flex items-center gap-[10px]
+              flex flex-col tablet:flex-row tablet:gap-[20px] justify-center items-center gap-[30px] flex-wrap
               '>
                 <a href="">
                   <Button text="Explore Courses" size="large" />       
@@ -116,7 +121,7 @@ const Hero = () => {
           </div>  
       </div>
 
-      <div className="#scrolling-bar flex justify-center items-center overflow-hidden mt-[100px]">
+      <div className="#scrolling-bar flex justify-center items-center overflow-hidden">
 
         <div className="slider-box whitespace-nowrap bg-absoluteWhite overflow-hidden relative w-[90%] desktop:w-[80%]">
           <span className='bg-gradient-to-r from-absoluteWhite block absolute top-0 left-0 h-[100%] w-[100px] tablet:w-[150px] laptop:w-[200px] z-10'></span>
@@ -147,9 +152,6 @@ const Hero = () => {
             <img src={andela} alt="" className='inline-block h-[30px] pr-[75px] tablet:pr-[95px] opacity-75'/>
             </div>
           </div>
-
-          {/* const sliderCopy = document.getElementById('#slider').cloneNode(true);
-          document.getElementById('#slider-box').appendChild(sliderCopy); */}
 
           <span className='bg-gradient-to-l from-absoluteWhite  block absolute top-0 right-0 h-[100%] w-[100px] tablet:w-[150px] laptop:w-[200px]'></span>
         </div>

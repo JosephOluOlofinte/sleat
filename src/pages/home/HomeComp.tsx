@@ -1,9 +1,10 @@
 // import React from 'react'
 
-import Benefits from "./Benefits"
+
 import Hero from "./Hero"
-import OurCourses from "./ourCourses"
-import Video from "./Video"
+import Image from "./Image"
+import Benefits from "./Benefits"
+import OurCourses from "./OurCourses"
 
 
 
@@ -11,7 +12,7 @@ const HomeComp = () => {
   return (
     <div>
         <Hero />
-        <Video />
+        <Image />
         <Benefits />
         <OurCourses />
     </div>

@@ -14,11 +14,11 @@ const BenefitsCard: React.FC<BenefitsProps> = ({id, title, desc, url ="",}) => {
   return (
                 <div className="bg-absoluteWhite p-[30px] xltablet:p-[40px] desktop:p-[50px] grid gap-[30px] xltablet:gap-[40px] desktop:gap-[50px] rounded-[10px]">
 
-                  <h2 className="text-right font-bold text-[50px] xltablet:text-[60px] desktop:text-[80px] "> {id} </h2>
+                  <h2 className="text-right font-bold text-[30px] xltablet:text-[40px] desktop:text-[50px] "> {id} </h2>
 
                   <div className="grid gap-[14px] xltablet:gap-[16px] desktop:gap-[20px]">
-                    <h3 className="text-[20px] desktop:text-[24px] font-semibold text-[#333333]"> {title} </h3>
-                    <p className="text-grey30 xlmobile:text-[16px] desktop:text-[18px] leading-[1.5] "> {desc} </p>
+                    <h3 className="text-[20px] desktop:text-[22px] font-semibold text-[#333333]"> {title} </h3>
+                    <p className="text-grey30 xlmobile:text-[15px] desktop:text-[17px] leading-[1.5] "> {desc} </p>
                   </div>
                   
                   <div className="flex justify-end">

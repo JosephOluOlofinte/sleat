@@ -29,33 +29,33 @@ const Benefits = () => {
                   url="https://www.goodemailcode.com/email-code/template" />
 
                 <BenefitsCard 
-                  id="01" 
-                  title="Flexible Learning Schedule" 
-                  desc="Fit your coursework around your existing commitments and obligations" 
+                  id="02" 
+                  title="Expert Instruction" 
+                  desc="Learn from industry experts who have hands-on experience in design and development." 
                   url="https://www.goodemailcode.com/email-code/template" />
 
                 <BenefitsCard 
-                  id="01" 
-                  title="Flexible Learning Schedule" 
-                  desc="Fit your coursework around your existing commitments and obligations" 
+                  id="03" 
+                  title="Diverse Course Offerings" 
+                  desc="Explore a wide range of design and development courses covering various topics." 
                   url="https://www.goodemailcode.com/email-code/template" />
 
                 <BenefitsCard 
-                  id="01" 
-                  title="Flexible Learning Schedule" 
-                  desc="Fit your coursework around your existing commitments and obligations" 
+                  id="04" 
+                  title="Updated Curriculum" 
+                  desc="Access courses with up-to-date content reflecting the latest trends and industry practices." 
                   url="https://www.goodemailcode.com/email-code/template" />
 
                 <BenefitsCard 
-                  id="01" 
-                  title="Flexible Learning Schedule" 
-                  desc="Fit your coursework around your existing commitments and obligations" 
+                  id="05" 
+                  title="Practical Projects and Assignments" 
+                  desc="Develop a portfolio showcasing your skills and abilities to potential employers." 
                   url="https://www.goodemailcode.com/email-code/template" />
 
                 <BenefitsCard 
-                  id="01" 
-                  title="Flexible Learning Schedule" 
-                  desc="Fit your coursework around your existing commitments and obligations" 
+                  id="06" 
+                  title="Interactive Learning Environment" 
+                  desc="Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding." 
                   url="https://www.goodemailcode.com/email-code/template" />
               </div>
             </div>
