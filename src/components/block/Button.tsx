@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-type Variant = "primary" | "secondary" | "danger" | "whiteBtn";
+type Variant = "primary" | "secondary" | "danger" | "whiteBtn" | "courseBtn";
 type Size = "small" | "medium" | "large";
 
 interface ButtonProps {
@@ -27,9 +27,10 @@ const Button: React.FC<ButtonProps> = ({
     // Define variant styles
     const variantStyles: Record<Variant, string> = {
         primary: "bg-orange50 text-absoluteWhite hover:bg-orange70",
-        secondary: "bg-absoluteWhite hover:border-[1px] hover:border-orange50 ease-in-out duration-500",
+        secondary: "bg-absoluteWhite border-[1px] border-absoluteWhite hover:text-orange50 hover:border-orange50 ease-in-out duration-500",
         danger: "bg-red-500 text-absoluteWhite hover:bg-red-600 focus:ring-red-300",
-        whiteBtn: "bg-absoluteWhite text-absoluteBlack text-[15px] text-grey15 font-medium inline-block "
+        whiteBtn: "bg-absoluteWhite text-absoluteBlack text-[15px] text-grey15 font-medium inline-block",
+        courseBtn: "bg-absoluteWhite border-white95 hover:bg-white97 hover:border-white90 ease-in-out duration-500 border-[2px] rounded-[8px] text-grey30 desktop:px-[16px] desktop:py-[10px] px-[14px] py-[8px] "
     }
 
     // Define size styles

@@ -20,12 +20,21 @@ const OurCourses = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 xltablet:grid-cols-2 grid-rows-6 tablet:grid-rows-3 gap-[20px] mt-[60px]">
+              <div className="grid grid-cols-1 xltablet:grid-cols-2 grid-rows-6 tablet:grid-rows-3 gap-[24px] mt-[60px]">
 
-                  <div className="bg-absoluteWhite p-[30px] xltablet:p-[40px] desktop:p-[50px] grid gap-[30px] xltablet:gap-[40px] desktop:gap-[50px] rounded-[10px]">
+                  <div className="bg-absoluteWhite p-[24px] xltablet:p-[35px] desktop:p-[45px] grid gap-[30px] xltablet:gap-[40px] desktop:gap-[50px] rounded-[10px]">
 
-                    <img src={UIUX} alt="UI/UX course" />
-                    <div></div>
+                    <a href=""><img src={UIUX} alt="UI/UX course" /></a>
+
+                    <div className="w-[100%] flex flex-col gap-[16px] tablet:flex-row tablet:items-center tablet:justify-between ">
+                      <div className="flex gap-[12px]">
+                        <a href=""><Button text="4 Weeks" variant="courseBtn" /></a>
+                        <a href=""><Button text="Beginner" variant="courseBtn" /></a>
+                      </div>
+                      <a href="">
+                      <h4 className="pl-[5px] tablet:pl-[0] font-medium text-[16px] desktop:text-[20px]">By John Smith</h4>
+                      </a>
+                    </div>
 
                     <div className="grid gap-[14px] xltablet:gap-[16px] desktop:gap-[20px]">
                       <h3 className="text-[20px] desktop:text-[22px] font-semibold text-[#333333]"> Web Design Fundamentals </h3>
@@ -35,6 +44,7 @@ const OurCourses = () => {
                     <div className="flex justify-end">
                       <a href="" className="bg-white97 p-[14px] desktop:p-[20px] border-[2px] border-white95 rounded-[6px] w-[100%] text-center "> Get It Now </a>
                     </div>
+                    
                   </div>
 
                 <BenefitsCard 
