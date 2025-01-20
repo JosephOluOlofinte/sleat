@@ -39,8 +39,8 @@ const CourseCard: React.FC<CourseCardProps> = ({
 
                         <div className="w-[100%] flex items-start flex-col gap-[16px] tablet:flex-row tablet:items-center xltablet:flex-col xltablet:items-start laptop:flex-row laptop:items-center tablet:justify-between ">
                             <div className="w-[100%] tablet:w-auto flex justify-between tablet:justify-normal tablet:gap-[12px] xltablet:w-[100%] xltablet:justify-between laptop:justify-normal laptop:w-auto ">
-                                <Button text={duration} variant="courseBtn" url={durationLink} />
-                                <Button text={level} variant="courseBtn" url={levelLink} />
+                                <Button text={duration} variant="courseBtn" size="small" url={durationLink} />
+                                <Button text={level} variant="courseBtn" size="small" url={levelLink} />
                             </div>
                             <a href={authorLink}>
                             <h4 className="pl-[5px] laptop:pl-[0] font-medium text-[16px] desktop:text-[18px]">By {author}</h4>
@@ -53,8 +53,8 @@ const CourseCard: React.FC<CourseCardProps> = ({
                       <p className="text-grey30 xlmobile:text-[15px] desktop:text-[17px] leading-[1.5] "> {desc} </p>
                     </div>
 
-                    <div className="flex justify-end">
-                      <a href={courselink} className="bg-white97 p-[14px] desktop:p-[20px] border-[2px] border-white95 rounded-[6px] w-[100%] text-center "> Get It Now </a>
+                    <div className="flex flex-col justify-end">
+                      <Button text="Get It Now" variant="greyBtn" url={courselink} />
                     </div>
                     
                   </div>
