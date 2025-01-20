@@ -5,6 +5,7 @@ type Variant = "primary" | "secondary" | "danger" | "whiteBtn" | "courseBtn";
 type Size = "small" | "medium" | "large";
 
 interface ButtonProps {
+    url?: string;
     text: string;
     variant?: Variant;
     size?: Size;
@@ -14,6 +15,7 @@ interface ButtonProps {
 
 
 const Button: React.FC<ButtonProps> = ({
+    url,
     text,
     variant = "primary",
     size = "medium",
@@ -44,7 +46,7 @@ const Button: React.FC<ButtonProps> = ({
     const styles = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
 
   return (
-    <button onClick={onClick} className={styles}> {text} </button>
+    <a href={url}><button onClick={onClick} className={styles}> {text} </button></a>
   )
 }
 

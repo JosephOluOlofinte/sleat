@@ -1,8 +1,8 @@
 // import React from 'react'
 
 import { Fragment } from "react/jsx-runtime"
-import Button from "../../components/block/Button"
-import CourseCard from "../../components/block/CourseCard"
+import { Button } from "../../components"
+import  { CourseCard } from "../../components"
 import webDev from "../../assets/img/webDev.png"
 import UIUX from "../../assets/img/UIUX.png"
 import mobileApp from "../../assets/img/mobile-app.png"
@@ -12,11 +12,11 @@ import advJavascript from "../../assets/img/advanced-javascript.png"
 
 
 
-const OurCourses = () => {
+const Courses = () => {
   return (
     <Fragment>
         <section className="min-h-[100vh] w-[100%] flex justify-center mt-[100px]">
-            <div className="h-[100%] w-[90%] desktop:w-[80%] grid">
+            <div className="h-[100%] w-[90%] desktop:w-[80%] grid grid-cols-1 gap-[60px] ">
               <div className="grid gap-[10px]">
                 <h2 className="font-semibold text-[28px] xltablet:text-[38px] desktop:text-[48px] text-grey15">Our Courses</h2>
                 <div className="grid xltablet:flex xltablet:justify-between xltablet:items-end ">
@@ -25,7 +25,7 @@ const OurCourses = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 xltablet:grid-cols-2 grid-rows-6 tablet:grid-rows-3 gap-[24px] mt-[60px]">
+              <div className="grid grid-cols-1 xltablet:grid-cols-2 grid-rows-6 tablet:grid-rows-3 gap-[24px]">
 
                   <CourseCard
                   image={webDev}
@@ -117,4 +117,4 @@ const OurCourses = () => {
   )
 }
 
-export default OurCourses
+export default Courses

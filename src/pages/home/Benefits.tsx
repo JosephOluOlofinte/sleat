@@ -11,7 +11,7 @@ const Benefits = () => {
   return (
     <Fragment>
         <section className="min-h-[100vh] w-[100%] flex justify-center mt-[80px]">
-            <div className="h-[100%] w-[90%] desktop:w-[80%] grid">
+            <div className="h-[100%] w-[90%] desktop:w-[80%] grid grid-cols-1 gap-[60px]">
               <div className="grid gap-[10px]">
                 <h2 className="font-semibold text-[28px] xltablet:text-[38px] desktop:text-[48px] text-grey15">Benefits</h2>
                 <div className="grid xltablet:flex xltablet:justify-between xltablet:items-end ">
@@ -20,7 +20,7 @@ const Benefits = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 grid-rows-1 tablet:grid-rows-2 gap-[20px] mt-[60px]">
+              <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 grid-rows-1 tablet:grid-rows-2 gap-[20px]">
 
                 <BenefitsCard 
                   id="01" 

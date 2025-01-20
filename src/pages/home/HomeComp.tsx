@@ -4,18 +4,21 @@
 import Hero from "./Hero"
 import Image from "./Image"
 import Benefits from "./Benefits"
-import OurCourses from "./OurCourses"
+import Courses from "./Courses"
+import Testimonials from "./Testimonials"
+import { Fragment } from "react/jsx-runtime"
 
 
 
 const HomeComp = () => {
   return (
-    <div>
+    <Fragment>
         <Hero />
         <Image />
         <Benefits />
-        <OurCourses />
-    </div>
+        <Courses />
+        <Testimonials />
+    </Fragment>
   )
 }
 
