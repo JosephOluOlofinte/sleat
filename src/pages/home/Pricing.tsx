@@ -18,29 +18,64 @@ const Pricing = () => {
                 </div>
             </div>
 
-            <div className="bg-absoluteWhite grid grid-cols-1 xltablet:grid-cols-2 grid-rows-4 xltablet:grid-rows-2 gap-[20px] rounded-[8px] lglaptop:gap-[25px] p-[30px]">
+            <div className="bg-absoluteWhite grid grid-cols-1 laptop:grid-cols-2 grid-rows-2 laptop:grid-rows-1 gap-[30px] rounded-[8px] p-[50px]">
 
-              <div className="bg-white99 border-[1px] border-white95 py-[30px] px-[20px] rounded-[8px]">
+              <div className="bg-white99 border-[1px] border-white95 pt-[40px] px-[24px] pb-[24px] rounded-[8px]">
 
                 <p className="bg-orange97 border-[1px] border-orange80 text-center p-[6px] rounded-[5px]">Free Plan</p>
 
                 <div className="flex justify-center items-baseline py-[30px]">
-                  <h4 className="text-[48px] font-semibold">$0</h4>
+                  <h4 className="text-[58px] font-semibold">$0</h4>
                   <p>/month</p>
                 </div>
 
-                <div className="bg-absoluteWhite border-white95 border-[1px] rounded-[8px] grid gap-[20px] p-[30px]">
+                <div className="bg-absoluteWhite border-white95 border-[1px] rounded-[8px] grid gap-[20px]">
 
-                  <h4 className="text-center text-[18px] font-bold p-[5px] mb-[15px]">Available Features</h4>
-                  <div className="grid gap-[20px] px-[30px]">
-                    <Feature text="Access to selected free courses."/>
-                    <Feature text="Limited course materials and resources."/>
-                    <Feature text="Basic community support."/>
-                    <Feature text="No certification upon completion."/>
-                    <Feature text="Ad-supported platform."/>
-                    <NoFeature text="Access to exclusive Pro Plan community forums."/>
-                    <NoFeature text="Early access to new courses and updates."/>
+                  <div className="p-[30px] grid gap-[24px]">
+                    <h4 className="text-center text-[18px] font-medium p-[5px] mb-[15px]">Available Features</h4>
+
+                    <div className="grid gap-[20px] px-[30px]">
+                      <Feature text="Access to selected free courses."/>
+                      <Feature text="Limited course materials and resources."/>
+                      <Feature text="Basic community support."/>
+                      <Feature text="No certification upon completion."/>
+                      <Feature text="Ad-supported platform."/>
+                      <NoFeature text="Access to exclusive Pro Plan community forums."/>
+                      <NoFeature text="Early access to new courses and updates."/>
+                    </div>
                   </div>
+
+                  <Button text="Get Started" size="large" className="w-[100%] rounded-t-none" />
+                </div>
+              </div>
+
+
+              <div className="bg-white99 border-[1px] border-white95 pt-[40px] px-[24px] pb-[24px] rounded-[8px]">
+
+                <p className="bg-orange97 border-[1px] border-orange80 text-center p-[6px] rounded-[5px]">Pro Plan</p>
+
+                <div className="flex justify-center items-baseline py-[30px]">
+                  <h4 className="text-[58px] font-semibold">$79</h4>
+                  <p>/month</p>
+                </div>
+
+                <div className="bg-absoluteWhite border-white95 border-[1px] rounded-[8px] grid gap-[20px]">
+
+                  <div className="p-[30px] grid gap-[24px]">
+                    <h4 className="text-center text-[18px] font-medium p-[5px] mb-[15px]">Available Features</h4>
+
+                    <div className="grid gap-[20px] px-[30px]">
+                      <Feature text="Unlimited access to all courses."/>
+                      <Feature text="Unlimited course materials and resources."/>
+                      <Feature text="Priority support from instructors."/>
+                      <Feature text="Course completion certificates."/>
+                      <Feature text="Ad-free experience."/>
+                      <Feature text="Access to exclusive Pro Plan community forums."/>
+                      <Feature text="Access to exclusive Pro Plan community forums."/>
+                    </div>
+                  </div>
+
+                  <Button text="Get Started" size="large" className="w-[100%] rounded-t-none" />
                 </div>
               </div>
 
