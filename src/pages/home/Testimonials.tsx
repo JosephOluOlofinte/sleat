@@ -1,7 +1,11 @@
 
 
-import { Fragment } from 'react'
-import { Button } from '../../components'
+import { Fragment } from 'react';
+import { Button, TestimonialsCard } from '../../components';
+import sarahL from '../../assets/img/sarah-L.png'
+import jasonM from '../../assets/img/jason-M.png'
+import emilyR from '../../assets/img/emily-R.png'
+import michealK from '../../assets/img/michael-k.png'
 
 
 const Testimonials = () => {
@@ -18,57 +22,31 @@ const Testimonials = () => {
                     </div>
     
                     <div className="grid grid-cols-1 xltablet:grid-cols-2 grid-rows-4 xltablet:grid-rows-2 gap-[20px] lglaptop:gap-[25px]">
-                        <div className='grid grid-cols-1 bg-absoluteWhite rounded-[10px] border-t-2 border-white95 overflow-hidden'>
-                            <p className='text-grey35 p-[40px] '>
-                                The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!
-                            </p>
-                            <div className='bg-white99 border-t-2 border-white95 flex justify-between items-center  px-[40px] py-[20px]'>
-                                <div className='flex items-center gap-[10px]'>
-                                    <div className='w-[50px] h-[50px] rounded-[7px] overflow-hidden '><img src="" alt="Sarah L skhdakabdkvbakdkavklkne hg ug eruigb eu geuo " className='w-[100%] bg-grey60' /></div>
-                                    <p>Sarah L</p>
-                                </div>
-                                <Button text="Read Full Story" variant='greyBtn' size='medium'/>
-                            </div>
-                        </div>
 
-                        <div className='grid grid-cols-1 bg-absoluteWhite px-[40px]'>
-                            <p className='text-grey35 py-[40px]'>
-                                The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!
-                            </p>
-                            <div className='bg-white95 border-[2px] border-white90 flex justify-between items-center py-[25px]'>
-                                <div className='flex items-center gap-[10px]'>
-                                    <div className='min-w-[50px] min-h-[50px] rounded-[7px] overflow-hidden '><img src="" alt="Sarah L" className='w-[100%] bg-grey60' /></div>
-                                    <p>Sarah L</p>
-                                </div>
-                                <Button text="Read Full Story" variant='greyBtn' size='small'/>
-                            </div>
-                        </div>
+                        <TestimonialsCard 
+                        para='The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!' 
+                        name='Sarah L' 
+                        img={sarahL} 
+                        url='#' />
 
-                        <div className='grid grid-cols-1 bg-absoluteWhite px-[40px]'>
-                            <p className='text-grey35 py-[40px]'>
-                                The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!
-                            </p>
-                            <div className='bg-white95 border-[2px] border-white90 flex justify-between items-center py-[25px]'>
-                                <div className='flex items-center gap-[10px]'>
-                                    <div className='w-[0px] h-[50px] rounded-[7px] overflow-hidden '><img src="" alt="Sarah L" className='w-[100%] bg-grey60' /></div>
-                                    <p>Sarah L</p>
-                                </div>
-                                <Button text="Read Full Story" variant='greyBtn' size='small'/>
-                            </div>
-                        </div>
+                        <TestimonialsCard 
+                        para="The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!" 
+                        name='Jason M' 
+                        img={jasonM} 
+                        url='#' />
 
-                        <div className='grid grid-cols-1 bg-absoluteWhite px-[40px]'>
-                            <p className='text-grey35 py-[40px]'>
-                                The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!
-                            </p>
-                            <div className='bg-white95 border-[2px] border-white90 flex justify-between items-center py-[25px]'>
-                                <div className='flex items-center gap-[10px]'>
-                                    <div className='w-[0px] h-[50px] rounded-[7px] overflow-hidden '><img src="" alt="Sarah L" className='w-[100%] bg-grey60' /></div>
-                                    <p>Sarah L</p>
-                                </div>
-                                <Button text="Read Full Story" variant='greyBtn' size='small'/>
-                            </div>
-                        </div>
+                        <TestimonialsCard 
+                        para="The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!" 
+                        name='Emily R' 
+                        img={emilyR} 
+                        url='#' />
+
+                        <TestimonialsCard 
+                        para="I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!" 
+                        name='Emily R' 
+                        img={michealK} 
+                        url='#' />
+
 
                     </div>
                 </div>
