@@ -8,6 +8,7 @@ import Benefits from "./Benefits"
 import Courses from "./Courses"
 import Testimonials from "./Testimonials"
 import Pricing from "./Pricing"
+import FAQs from "./FAQs"
 
 
 
@@ -20,6 +21,7 @@ const HomeComp = () => {
         <Courses />
         <Testimonials />
         <Pricing />
+        <FAQs />
     </Fragment>
   )
 }
