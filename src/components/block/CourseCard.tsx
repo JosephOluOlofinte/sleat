@@ -50,7 +50,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
 
                     <div className="grid gap-[14px] xltablet:gap-[16px] desktop:gap-[20px]">
                       <h3 className="text-[20px] desktop:text-[22px] font-semibold text-[#333333]"> {title} </h3>
-                      <p className="text-grey30 xlmobile:text-[15px] desktop:text-[17px] leading-[1.5] "> {desc} </p>
+                      <p className="text-grey30"> {desc} </p>
                     </div>
 
                     <div className="flex flex-col justify-end">

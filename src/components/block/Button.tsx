@@ -24,7 +24,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
 
     // Define base styles
-    const baseStyles = "text-[14px] lglaptop:text-[16px] desktop:text-[18px] rounded-[6px] focus;ring transition duration-300";
+    const baseStyles = "rounded-[6px] focus:ring transition duration-300";
 
     // Define variant styles
     const variantStyles: Record<Variant, string> = {
