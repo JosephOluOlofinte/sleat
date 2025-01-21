@@ -17,8 +17,7 @@ const Hero = () => {
   return (
     <main className="
     #heroSection
-    grid justify-center
-    h-[calc(100vh-130px)] w-[100%]
+    grid justify-center h-[calc(100vh-130px)] max-h-[770px] xltablet:max-h-[950px] w-[100%]
     ">
       <div className="
         // Hero section
