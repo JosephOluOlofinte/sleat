@@ -18,23 +18,23 @@ const Pricing = () => {
                 </div>
             </div>
 
-            <div className="bg-absoluteWhite grid grid-cols-1 laptop:grid-cols-2 grid-rows-2 laptop:grid-rows-1 gap-[30px] rounded-[8px] p-[50px]">
+            <div className="xltablet:bg-absoluteWhite grid grid-cols-1 laptop:grid-cols-2 gap-[30px] rounded-[8px] xltablet:p-[30px] lglaptop:p-[50px]">
 
-              <div className="bg-white99 border-[1px] border-white95 pt-[40px] px-[24px] pb-[24px] rounded-[8px]">
+              <div className="bg-white99 border-[1px] border-white95 pt-[30px] px-[15px] pb-[20px] rounded-[8px] grid gap-[30px]">
 
-                <p className="bg-orange97 border-[1px] border-orange80 text-center p-[6px] rounded-[5px]">Free Plan</p>
+                <p className="bg-orange97 border-[1px] border-orange80 text-center font-semibold p-[10px] rounded-[5px] h-fit">Free Plan</p>
 
-                <div className="flex justify-center items-baseline py-[30px]">
-                  <h4 className="text-[58px] font-semibold">$0</h4>
+                <div className="flex justify-center items-baseline h-fit">
+                  <h4 className="text-[38px] xltablet:text-[55px] font-semibold">$0</h4>
                   <p>/month</p>
                 </div>
 
-                <div className="bg-absoluteWhite border-white95 border-[1px] rounded-[8px] grid gap-[20px]">
+                <div className="bg-absoluteWhite border-white95 border-[1px] rounded-[8px] grid gap-[20px] h-fit">
 
-                  <div className="p-[30px] grid gap-[24px]">
-                    <h4 className="text-center text-[18px] font-medium p-[5px] mb-[15px]">Available Features</h4>
+                  <div className="py-[24px] grid gap-[24px] h-fit">
+                    <h4 className="text-center text-[18px] font-medium p-[5px]">Available Features</h4>
 
-                    <div className="grid gap-[20px] px-[30px]">
+                    <div className="grid gap-[20px] px-[20px]">
                       <Feature text="Access to selected free courses."/>
                       <Feature text="Limited course materials and resources."/>
                       <Feature text="Basic community support."/>
@@ -50,19 +50,19 @@ const Pricing = () => {
               </div>
 
 
-              <div className="bg-white99 border-[1px] border-white95 pt-[40px] px-[24px] pb-[24px] rounded-[8px]">
+              <div className="bg-white99 border-[1px] border-white95 pt-[30px] px-[15px] pb-[20px] rounded-[8px] grid gap-[30px]">
 
-                <p className="bg-orange97 border-[1px] border-orange80 text-center p-[6px] rounded-[5px]">Pro Plan</p>
+                <p className="bg-orange97 border-[1px] border-orange80 text-center font-semibold p-[10px] rounded-[5px] h-fit">Pro Plan</p>
 
-                <div className="flex justify-center items-baseline py-[30px]">
-                  <h4 className="text-[58px] font-semibold">$79</h4>
+                <div className="flex justify-center items-baseline h-fit">
+                  <h4 className="text-[38px] xltablet:text-[55px] font-semibold">$79</h4>
                   <p>/month</p>
                 </div>
 
-                <div className="bg-absoluteWhite border-white95 border-[1px] rounded-[8px] grid gap-[20px]">
+                <div className="bg-absoluteWhite border-white95 border-[1px] rounded-[8px] grid gap-[20px] h-fit">
 
-                  <div className="p-[30px] grid gap-[24px]">
-                    <h4 className="text-center text-[18px] font-medium p-[5px] mb-[15px]">Available Features</h4>
+                  <div className="py-[20px] grid gap-[24px] h-fit">
+                    <h4 className="text-center text-[18px] font-medium p-[5px]">Available Features</h4>
 
                     <div className="grid gap-[20px] px-[30px]">
                       <Feature text="Unlimited access to all courses."/>
