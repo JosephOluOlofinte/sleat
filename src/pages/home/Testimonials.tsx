@@ -18,16 +18,16 @@ const Testimonials = () => {
                     </div>
     
                     <div className="grid grid-cols-1 xltablet:grid-cols-2 grid-rows-4 xltablet:grid-rows-2 gap-[20px] lglaptop:gap-[25px]">
-                        <div className='grid grid-cols-1 bg-absoluteWhite rounded-[10px]'>
+                        <div className='grid grid-cols-1 bg-absoluteWhite rounded-[10px] border-t-2 border-white95 overflow-hidden'>
                             <p className='text-grey35 p-[40px] '>
                                 The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!
                             </p>
-                            <div className='bg-white99 flex justify-between items-center  px-[40px] py-[25px]'>
+                            <div className='bg-white99 border-t-2 border-white95 flex justify-between items-center  px-[40px] py-[20px]'>
                                 <div className='flex items-center gap-[10px]'>
-                                    <div className='w-[0px] h-[50px] rounded-[7px] overflow-hidden '><img src="" alt="Sarah L" className='w-[100%] bg-grey60' /></div>
+                                    <div className='w-[50px] h-[50px] rounded-[7px] overflow-hidden '><img src="" alt="Sarah L skhdakabdkvbakdkavklkne hg ug eruigb eu geuo " className='w-[100%] bg-grey60' /></div>
                                     <p>Sarah L</p>
                                 </div>
-                                <Button text="Read Full Story" variant='greyBtn' size='small'/>
+                                <Button text="Read Full Story" variant='greyBtn' size='medium'/>
                             </div>
                         </div>
 
@@ -37,7 +37,7 @@ const Testimonials = () => {
                             </p>
                             <div className='bg-white95 border-[2px] border-white90 flex justify-between items-center py-[25px]'>
                                 <div className='flex items-center gap-[10px]'>
-                                    <div className='w-[0px] h-[50px] rounded-[7px] overflow-hidden '><img src="" alt="Sarah L" className='w-[100%] bg-grey60' /></div>
+                                    <div className='min-w-[50px] min-h-[50px] rounded-[7px] overflow-hidden '><img src="" alt="Sarah L" className='w-[100%] bg-grey60' /></div>
                                     <p>Sarah L</p>
                                 </div>
                                 <Button text="Read Full Story" variant='greyBtn' size='small'/>
