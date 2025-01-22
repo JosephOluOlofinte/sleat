@@ -4,23 +4,31 @@ import React from 'react';
 type Variant = "primary" | "secondary" | "danger" | "whiteBtn" | "greyBtn" | "courseBtn";
 type Size = "small" | "medium" | "large";
 
-interface ButtonProps {
+ type ButtonProps = {
+
+    text?: string; 
     url?: string;
-    text: string;
-    variant?: Variant;
-    size?: Size;
-    onClick?: () => void;
-    className?: string; // for possible additional styling
-}
+    variant?: "primary" | "secondary" | "danger";
+    size?: "small" | "medium" | "large"; 
+    type?: "button" | "submit" | "reset";
+    className?: string;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    isLoading?: boolean;
+  
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 
 const Button: React.FC<ButtonProps> = ({
-    url,
     text,
+    url,
     variant = "primary",
     size = "medium",
+    type = "button",
+    isLoading = false,
     onClick,
     className = "",
+    children,
+    ...rest
 }) => {
 
     // Define base styles
@@ -33,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({
         danger: "bg-red-500 text-absoluteWhite hover:bg-red-600 focus:ring-red-300",
         whiteBtn: "bg-absoluteWhite hover:bg-white95 text-absoluteBlack text-[15px] text-grey15 font-medium inline-block",
         greyBtn: "bg-white97 border-[2px] border-white95 rounded-[6px] w-[100%] text-center",
-        courseBtn: "bg-absoluteWhite border-white95 hover:bg-white97 hover:border-white90 ease-in-out duration-500 border-[2px] text-grey30"
+        courseBtn: "bg-absoluteWhite border-white95 hover:bg-white97 hover:border-white90 ease-in-out duration-500 border-[2px] text-grey30",
     }
 
     // Define size styles
@@ -47,7 +55,14 @@ const Button: React.FC<ButtonProps> = ({
     const styles = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
 
   return (
-    <a href={url}><button onClick={onClick} className={styles}> {text} </button></a>
+    <>
+    {/* <a href={url}><button onClick={onClick} className={styles}> {text} </button></a> */}
+    <a href={url}>
+        <button type={type} onClick={onClick} className={styles} disabled={isLoading} {...rest}> 
+            {isLoading ? "Loading..." : children || text} 
+        </button>
+    </a>
+  </>
   )
 }
 
