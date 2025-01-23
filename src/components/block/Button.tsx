@@ -56,7 +56,6 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <>
-    {/* <a href={url}><button onClick={onClick} className={styles}> {text} </button></a> */}
     <a href={url}>
         <button type={type} onClick={onClick} className={styles} disabled={isLoading} {...rest}> 
             {isLoading ? "Loading..." : children || text} 
