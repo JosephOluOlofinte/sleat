@@ -8,8 +8,8 @@ import { Button } from "../../components"
 const FAQs = () => {
   return (
     <Fragment>
-        <section className="min-h-[40vh] w-[100%] flex justify-center mt-[100px]">
-            <div className="h-[100%] w-[90%] desktop:w-[80%] grid grid-cols-1 gap-[60px]">
+        <section className="min-h-[40vh] w-[100%] flex justify-center mt-[70px]">
+            <div className="h-[100%] w-[90%] desktop:w-[80%] bg-absoluteWhite p-[24px] xltablet:p-[30px] lglaptop:p-[50px] grid grid-cols-1 gap-[50px]">
               <div className="grid gap-[10px]">
                 <h2 className="font-semibold text-grey15">Frequently Asked Questions</h2>
                 <div className="grid xltablet:flex xltablet:justify-between xltablet:items-end">

@@ -5,10 +5,9 @@ type Variant = "primary" | "secondary" | "danger" | "whiteBtn" | "greyBtn" | "co
 type Size = "small" | "medium" | "large";
 
  type ButtonProps = {
-
     text?: string; 
     url?: string;
-    variant?: "primary" | "secondary" | "danger";
+    variant?: "primary" | "secondary" | "danger" | "whiteBtn" | "greyBtn" | "courseBtn";
     size?: "small" | "medium" | "large"; 
     type?: "button" | "submit" | "reset";
     className?: string;
