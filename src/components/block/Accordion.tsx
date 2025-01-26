@@ -13,17 +13,14 @@ const Accordion: React.FC<AccordionProps> = ({ title, description }) => {
   };
 
   return (
-    <div className='h-max' style={{ }}>
+    <div className='h-max border-[1px] border-white95 rounded-[10px] px-[24px] xltablet:px-[40px] lglaptop:px-[50px] min-w-[100%]' style={{ paddingBlock: isOpen ? '40px' : '24px',
+    }}>
       <button
         onClick={toggleAccordion}
         style={{
           width: '100%',
           textAlign: 'left',
-          paddingBlock: isOpen ? '40px' : '24px',
-          paddingInline: '40px',
           cursor: 'pointer',
-          background: '#24e',
-          border: isOpen ? '1px solid #F1F1F3' : 'none',
           outline: 'none',
           display: 'flex',
           justifyContent: 'space-between',
@@ -40,7 +37,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, description }) => {
 
       </button>
       {isOpen ?
-        <div style={{ padding: '10px', borderTop: '1px solid #ccc' }}>
+        <div className='border-t-[1px] border-white95 mt-[24px]'>
           {description}
         </div> : null
       }
