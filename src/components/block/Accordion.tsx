@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from './Button';
 
 interface AccordionProps {
   title: string;
@@ -37,9 +38,15 @@ const Accordion: React.FC<AccordionProps> = ({ title, description }) => {
 
       </button>
       {isOpen ?
-        <div className='border-t-[1px] border-white95 mt-[24px]'>
+      <>
+        <div className='border-t-[1px] border-white95 py-[20px] mt-[24px]'>
           {description}
-        </div> : null
+
+        </div>
+
+        <Button variant="greyBtn" size="large" text="Enrollment Process for Different Courses" />
+        </>
+        : null
       }
     </div>
   );
