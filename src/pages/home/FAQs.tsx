@@ -20,7 +20,7 @@ const FAQs = () => {
               <div className="col-span-2 grid gap-[30px] h-max">
                 <div className="grid gap-[15px]">
                   <h2 className="font-semibold text-grey15 laptop:w-[15ch]">Frequently Asked Questions</h2>
-                  <p className="laptop:w-[45ch] text-grey35  pr-[5px] whitespace-break-spaces">
+                  <p className="laptop:w-[90%] text-grey35  pr-[5px] whitespace-break-spaces">
                     Still you have any questions? Contact our Team via support@skillbridge.com
                   </p>
                 </div>
@@ -29,7 +29,7 @@ const FAQs = () => {
               </div>
 
               <div className="rounded-2xl grid gap-[20px] h-max xltablet:min-w-[70%] laptop:col-span-3">
-                <Accordion title="Accordion 1" description="Accordion 1" />
+                <Accordion title="Accordion 1" description="Accordion 1" btnText="Enrollment Process for Different Courses" />
 
               </div>
 

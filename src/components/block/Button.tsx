@@ -11,6 +11,7 @@ type Size = "small" | "medium" | "large";
     size?: "small" | "medium" | "large"; 
     type?: "button" | "submit" | "reset";
     className?: string;
+    children?: React.ReactNode;
     onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
     isLoading?: boolean;
   
