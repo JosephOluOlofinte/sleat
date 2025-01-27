@@ -45,16 +45,17 @@ const Accordion: React.FC<AccordionProps> = ({ title, description, withBtn, btnT
           outline: 'none',
           display: 'flex',
           justifyContent: 'space-between',
-          alignItems: 'center'
+          alignItems: 'center',
         }}
       >
-        <h3 className='text-[16px] laptop:text-[18px] desktop:text-[20px] font-medium max-w-[15ch] laptop:max-w-[40ch]'>{title}</h3> 
-        { isOpen ? (<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-10 p-[9px] bg-orange95 rounded-md">
+        <h3 className='text-[16px] laptop:text-[18px] desktop:text-[20px] font-medium max-w-[80%] leading-7 '>{title}</h3> 
+        { isOpen ? (<div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-10 laptop:size-11 desktop:size-12 p-[9px] bg-orange95 rounded-md">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-        </svg>
-        ) : (<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="size-10 p-[9px] bg-orange95 rounded-md">
+        </svg></div>) 
+        : 
+        (<div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="size-10 laptop:size-11 desktop:size-12 p-[9px] bg-orange95 rounded-md">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-      </svg>)}
+      </svg></div>)}
 
       </button>
       {isOpen ?
