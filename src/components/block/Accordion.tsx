@@ -33,10 +33,11 @@ const Accordion: React.FC<AccordionProps> = ({ title, description, withBtn, btnT
   };
 
   return (
-    <div className='h-max border-[1px] border-white95 rounded-[10px] px-[24px] xltablet:px-[40px] lglaptop:px-[50px] min-w-[100%]' style={{ paddingBlock: isOpen ? '40px' : '24px',
+    <div className='h-max border-[1px] border-white95 rounded-[10px] px-[24px] xltablet:px-[40px] lglaptop:px-[50px] w-[100%]' style={{ paddingBlock: isOpen ? '40px' : '24px',
     }}>
       <button
         onClick={toggleAccordion}
+        className='w-[100%]'
         style={{
           width: '100%',
           textAlign: 'left',

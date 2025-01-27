@@ -17,7 +17,7 @@ const FAQs = () => {
             grid grid-cols-1 laptop:grid-cols-5 
             gap-[40px] laptop:gap-[70px] lglaptop:gap-[100px]
             ">
-              <div className="col-span-2 grid gap-[30px] h-max">
+              <div className="laptop:col-span-2 grid gap-[30px] h-max">
                 <div className="grid gap-[15px]">
                   <h2 className="font-semibold text-grey15 laptop:w-[15ch]">Frequently Asked Questions</h2>
                   <p className="laptop:w-[90%] text-grey35  pr-[5px] whitespace-break-spaces">
@@ -28,7 +28,7 @@ const FAQs = () => {
                   <Button text="See All FAQs" variant="whiteBtn" size="large" className="border-[1px]" />
               </div>
 
-              <div className="rounded-2xl grid gap-[20px] h-max xltablet:min-w-[70%] laptop:col-span-3">
+              <div className="rounded-2xl grid gap-[20px] h-max laptop:col-span-3">
 
                 <Accordion
                  title="Can I enroll in multiple courses at once?"
