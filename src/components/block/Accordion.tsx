@@ -1,13 +1,31 @@
 import React, { useState } from 'react';
 import Button from './Button';
 
+// DOCUMENTATION
+// This is the accordion prop and it can be of two types: 
+// with a button and without button
+// Using a button is optional, 
+// so if a button is needed, simply don't add it
+// if a button is needed, in order to link to a page or more info,
+// use withBtn as in <Accordion text="" description="" witBtn />
+// without button is just <Accordion text="" description="" />
+// values realted to Btn are also optional
+
+// This accordion uses the <Button /> prop which has its own properties
+// such as text, url, and others
+// btnUrl and btnUrl in <Accordion />
+// are mapped to url and text in <Button />
+
+
 interface AccordionProps {
   title: string;
   description: string;
-  btnText: string;
+  withBtn?: boolean; //optional. use withBtn in the Accordion to enable the button
+  btnText?: string;
+  btnUrl?: string;
 }
 
-const Accordion: React.FC<AccordionProps> = ({ title, description, btnText = "", }) => {
+const Accordion: React.FC<AccordionProps> = ({ title, description, withBtn, btnText = "", btnUrl, }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -40,21 +58,20 @@ const Accordion: React.FC<AccordionProps> = ({ title, description, btnText = "",
       </button>
       {isOpen ?
       <>
-        <div className='border-t-[1px] border-white95 py-[20px] laptop:py-[40px] desktop:py-[50px] mt-[24px]'>
+        <div className='border-t-[1px] border-white95 pt-[20px] laptop:pt-[40px] desktop:pt-[50px] mt-[24px]'>
           {description}
 
         </div>
 
-        <Button variant="greyBtn" size="medium" className='flex justify-between items-center'> 
+        { withBtn ? 
+        <Button variant="greyBtn" size="medium" className='flex justify-between items-center mt-[20px] laptop:mt-[40px] desktop:mt-[50px]' url={btnUrl}> 
           <p className='font-medium'>{btnText}</p>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-10 laptop:size-12 desktop:size-14 bg-absoluteWhite">
-          <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z" clipRule="evenodd" />
-        </svg>
 
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10 laptop:size-12 desktop:size-14 bg-absoluteWhite m-0">
-            <path strokeLinecap="round" strokeLinejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="size-10 stroke-grey30 laptop:size-12 desktop:size-14 bg-absoluteWhite rounded-full m-0">
+            <path strokeLinecap="round" strokeLinejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7" />
           </svg>
-        </Button>
+        </Button> : null }
+        
         </>
         : null
       }

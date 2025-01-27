@@ -32,7 +32,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
 
     // Define base styles
-    const baseStyles = "rounded-[6px] focus:ring transition duration-300";
+    const baseStyles = "rounded-[6px]";
 
     // Define variant styles
     const variantStyles: Record<Variant, string> = {

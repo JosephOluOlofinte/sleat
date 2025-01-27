@@ -29,7 +29,9 @@ const FAQs = () => {
               </div>
 
               <div className="rounded-2xl grid gap-[20px] h-max xltablet:min-w-[70%] laptop:col-span-3">
-                <Accordion title="Accordion 1" description="Accordion 1" btnText="Enrollment Process for Different Courses" />
+
+                <Accordion title="Accordion 1" description="Accordion 1" withBtn btnText="Enrollment Process for Different Courses" />
+                <Accordion title="Accordion 1" description="Accordion 1"/>
 
               </div>
 
