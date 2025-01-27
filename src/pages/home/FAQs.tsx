@@ -30,8 +30,39 @@ const FAQs = () => {
 
               <div className="rounded-2xl grid gap-[20px] h-max xltablet:min-w-[70%] laptop:col-span-3">
 
-                <Accordion title="Accordion 1" description="Accordion 1" withBtn btnText="Enrollment Process for Different Courses" />
-                <Accordion title="Accordion 1" description="Accordion 1"/>
+                <Accordion
+                 title="Can I enroll in multiple courses at once?"
+                 description="Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience." 
+                 withBtn 
+                 btnText="Enrollment Process for Different Courses"
+                 btnUrl="#" 
+                />
+
+                <Accordion
+                 title="What kind of support can I expect from instructors?"
+                 description="You can expect the best support from our platform. We have livechat, email, phone, and chatbot availalble" 
+                 withBtn 
+                 btnText="Learn more about contacting suporrt"
+                 btnUrl="#" 
+                />
+
+                <Accordion
+                 title="Are the courses self-paced or do they have specific start and end dates?"
+                 description="Our courses are absolutely self-paced. Every course material is available from your dashboard, and you can access them at your convenience." 
+                 withBtn 
+                 btnText="Learn more about the provided course materials!"
+                 btnUrl="#" 
+                />
+
+                <Accordion
+                 title="Are there any prerequisites for the courses?"
+                 description="That depends. If you have absolutely no experience, then our Beginner courses are the best for you. Intermediate and Advanced course may require that you have some knowledge in the area you desire to pursue. However, access to a computer and the internet is essential to be able to access your courses and practice." 
+                />
+
+                <Accordion
+                 title="Can I download the course materials for offline access?"
+                 description="Unfortunately, you will not be able to. These courses are proprietary materials and as such, we cannot run the risk of them being pirated. We appreciate your understanding." 
+                />
 
               </div>
 

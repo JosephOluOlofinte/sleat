@@ -47,8 +47,8 @@ const Button: React.FC<ButtonProps> = ({
     // Define size styles
     const sizeStyles: Record<Size, string> = {
         small: "py-[8px] laptop:py-[10px] px-[14px] laptop:px-[16px] font-medium",
-        medium: "py-[14px] laptop:py-[18px] px-[20px] laptop:px-[24px] font-semibold",
-        large: "py-[14px] laptop:py-[18px] px-[24px] laptop:px-[34px] font-semibold",
+        medium: "py-[14px] laptop:py-[16px] px-[20px] laptop:px-[24px] font-semibold",
+        large: "py-[16px] laptop:py-[18px] px-[24px] laptop:px-[34px] font-semibold",
     }
 
     // combine styles
