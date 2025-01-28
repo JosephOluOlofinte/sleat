@@ -27,7 +27,7 @@ const BenefitsCard: React.FC<BenefitsProps> = ({
                   </div>
                   
                   <div className="flex justify-end">
-                    <a href={url} className="bg-white99 p-[14px] desktop:p-[20px] border-[2px] rounded-[6px] h-fit">
+                    <a href={url} className="bg-white99 p-[14px] desktop:p-[20px] border-[1px] rounded-[6px] h-fit">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6 text-orange50">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                       </svg>

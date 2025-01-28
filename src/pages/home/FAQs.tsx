@@ -42,7 +42,7 @@ const FAQs = () => {
                  title="What kind of support can I expect from instructors?"
                  description="You can expect the best support from our platform. We have livechat, email, phone, and chatbot availalble" 
                  withBtn 
-                 btnText="Learn more about contacting suporrt"
+                 btnText="Learn more about contacting suport"
                  btnUrl="#" 
                 />
 
@@ -55,7 +55,7 @@ const FAQs = () => {
                 />
 
                 <Accordion
-                 title="Are there any prerequisites for the courses?"
+                 title="Are there any pre-requisites for the courses?"
                  description="That depends. If you have absolutely no experience, then our Beginner courses are the best for you. Intermediate and Advanced course may require that you have some knowledge in the area you desire to pursue. However, access to a computer and the internet is essential to be able to access your courses and practice." 
                 />
 

@@ -39,16 +39,16 @@ const Button: React.FC<ButtonProps> = ({
         primary: "bg-orange50 text-absoluteWhite hover:bg-orange70",
         secondary: "bg-absoluteWhite border-[1px] border-absoluteWhite hover:text-orange50 hover:border-orange50 ease-in-out duration-500",
         danger: "bg-red-500 text-absoluteWhite hover:bg-red-600 focus:ring-red-300",
-        whiteBtn: "bg-absoluteWhite hover:bg-white95 text-absoluteBlack text-[15px] text-grey15 font-medium inline-block",
-        greyBtn: "bg-white97 border-[2px] border-white95 rounded-[6px] w-[100%] text-center",
-        courseBtn: "bg-absoluteWhite border-white95 hover:bg-white97 hover:border-white90 ease-in-out duration-500 border-[2px] text-grey30",
+        whiteBtn: "bg-absoluteWhite hover:bg-white95 ease-in-out duration-500 text-absoluteBlack text-[15px] text-grey15 font-medium inline-block",
+        greyBtn: "bg-white97 border-[1px] border-white95 rounded-[6px] w-[100%] text-center",
+        courseBtn: "bg-absoluteWhite border-white95 hover:bg-white97 hover:border-white90 ease-in-out duration-500 border-[1px] text-grey30 text-[12px] xltablet:text-[14px] desktop:text-[16px]",
     }
 
     // Define size styles
     const sizeStyles: Record<Size, string> = {
-        small: "py-[8px] laptop:py-[10px] px-[14px] laptop:px-[16px] font-medium",
-        medium: "py-[14px] laptop:py-[16px] px-[20px] laptop:px-[24px] font-semibold",
-        large: "py-[16px] laptop:py-[18px] px-[24px] laptop:px-[34px] font-semibold",
+        small: "py-[6px] px-[14px] laptop:px-[16px] font-medium",
+        medium: "py-[10px] laptop:py-[12px] px-[20px] laptop:px-[24px] font-semibold",
+        large: "py-[14px] laptop:py-[16px] px-[24px] laptop:px-[34px] font-semibold",
     }
 
     // combine styles

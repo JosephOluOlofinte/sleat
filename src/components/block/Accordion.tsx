@@ -49,7 +49,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, description, withBtn, btnT
         }}
       >
         <h3 className='text-[16px] laptop:text-[18px] desktop:text-[20px] font-medium max-w-[80%] leading-7 '>{title}</h3> 
-        { isOpen ? (<div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-10 laptop:size-11 desktop:size-12 p-[9px] bg-orange95 rounded-md">
+        { isOpen ? (<div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-10 laptop:size-11 desktop:size-12 p-[9px] bg-orange95 rounded-md">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg></div>) 
         : 
@@ -66,7 +66,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, description, withBtn, btnT
         </div>
 
         { withBtn ? 
-        <Button variant="greyBtn" size="small" className='flex justify-between items-center mt-[20px] laptop:mt-[40px] desktop:mt-[50px] ' url={btnUrl}> 
+        <Button variant="greyBtn" size="medium" className='flex justify-between items-center mt-[20px] laptop:mt-[40px] desktop:mt-[50px] ' url={btnUrl}> 
           <p className='font-medium text-grey30'>{btnText}</p>
 
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="stroke-grey30 size-10 laptop:size-12 desktop:size-14 bg-absoluteWhite rounded-full m-0 leading-none">
