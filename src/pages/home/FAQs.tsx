@@ -11,7 +11,7 @@ const FAQs = () => {
     <Fragment>
         <section className="min-h-[40vh] w-[100%] flex justify-center mt-[70px]">
             <div className="
-          bg-absoluteWhite  rounded-xl
+          bg-absoluteWhite  rounded-[10px]
             h-[100%] w-[90%] desktop:w-[80%]
             p-[24px] xltablet:p-[50px] laptop:p-[70px] lglaptop:p-[90px] desktop:p-[110px] 
             grid grid-cols-1 laptop:grid-cols-5 

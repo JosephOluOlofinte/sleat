@@ -1,7 +1,7 @@
 // import React from 'react'
 
 import { Fragment } from "react/jsx-runtime"
-import { Header } from "../components"
+import { Footer, Header } from "../components"
 import { HomeComp } from "../pages/home"
 
 
@@ -11,6 +11,7 @@ const HomeLayout = () => {
     <Fragment>
       <Header />
       <HomeComp/>
+      <Footer />
     </Fragment>
   )
 }

@@ -122,7 +122,7 @@ const Hero = () => {
 
       <div className="#scrolling-bar flex justify-center items-center overflow-hidden">
 
-        <div className="slider-box whitespace-nowrap bg-absoluteWhite overflow-hidden relative w-[90%] desktop:w-[80%]">
+        <div className="slider-box whitespace-nowrap bg-absoluteWhite overflow-hidden relative w-[90%] desktop:w-[80%] rounded-[10px]">
           <span className='bg-gradient-to-r from-absoluteWhite block absolute top-0 left-0 h-[100%] w-[100px] tablet:w-[150px] laptop:w-[200px] z-10'></span>
           
           <div id='slider' className='inline-block whitespace-nowrap animate-hero-slide py-[30px] px-[50px]'>

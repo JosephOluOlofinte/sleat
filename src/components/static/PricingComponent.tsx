@@ -4,7 +4,7 @@ import { Button, Feature, NoFeature } from "../block"
 
 const Pricing = () => {
   return (
-    <div className="xltablet:bg-absoluteWhite grid grid-cols-1 laptop:grid-cols-2 gap-[30px] rounded-[8px] xltablet:p-[30px] lglaptop:p-[50px]">
+    <div className="xltablet:bg-absoluteWhite grid grid-cols-1 laptop:grid-cols-2 gap-[30px] rounded-[10px] xltablet:p-[30px] lglaptop:p-[50px]">
 
       <div className="bg-white99 border-[1px] border-white95 pt-[30px] px-[15px] pb-[20px] rounded-[8px] grid gap-[30px]">
 
