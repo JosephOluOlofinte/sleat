@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div className="grid grid-cols-2 xltablet:grid-cols-3 gap-[24px]">
-          <div className="grid gap-[10px] lglaptop:gap-[14px]">
+          <div className="grid gap-[10px] lglaptop:gap-[14px] h-fit">
             <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">Home</h3>
             <ul>
               <li>Benefits</li>
@@ -46,7 +46,7 @@ const Footer = () => {
               <li>FAQs</li>
             </ul>
           </div>
-          <div className="grid gap-[10px] lglaptop:gap-[14px]">
+          <div className="grid gap-[10px] lglaptop:gap-[14px] h-fit">
             <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">About Us</h3>
             <ul>
               <li>Company</li>
@@ -54,7 +54,7 @@ const Footer = () => {
               <li>Our Goals</li>
             </ul>
           </div>
-          <div className="grid gap-[10px] lglaptop:gap-[14px]">
+          <div className="grid gap-[10px] lglaptop:gap-[14px] h-fit">
             <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">Social Profiles</h3>
           </div>
         </div>
