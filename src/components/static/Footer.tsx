@@ -10,17 +10,19 @@ const Footer = () => {
   return (
     <Fragment>
       <footer className="bg-absoluteWhite w-[100%] flex justify-center mt-[70px]">
-        <div className="h-[100%] w-[90%] desktop:w-[80%]">
-          <div className="
-          h-[100%] w-[100%] rounded-[10px] border-b-[1px]
-          pt-[50px] xltablet:pt-[80px] lglaptop:pt-[100px] pb-[30px]  
-          grid grid-cols-1 xltablet:grid-cols-3 lglaptop:grid-cols-2 gap-6">
+        <div className="h-[100%] w-[90%] desktop:w-[80%] pt-[50px] xltablet:pt-[80px] lglaptop:pt-[100px]">
 
-            <div className="grid h-max gap-7 justify-between">
-              <div className="w-[44px] xltablet:w-[48px] lglaptop:w-[54px]">
-                <img src={Logo} alt="" />
-              </div>
-              <ul className="grid h-max gap-2">
+          <div className="w-[44px] xltablet:w-[48px] lglaptop:w-[54px] mb-[30px]">
+            <img src={Logo} alt="" />
+          </div>
+
+          <div className="
+          h-[100%] w-[100%] rounded-[10px] border-b-[1px]  
+          grid grid-cols-2 laptop:grid-cols-4 gap-8 justify-between">
+
+            <div className="grid gap-[10px] lglaptop:gap-[14px] h-fit">
+              <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">Contact</h3>
+              <ul className="grid h-fit gap-2">
                 <li className="flex gap-2 items-center w-max">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                     <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
@@ -44,31 +46,30 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
-            <div className="grid grid-cols-2 xltablet:col-span-2 lglaptop:col-span-1 tablet:grid-cols-3 gap-[24px]">
+            
               
-              <div className="grid gap-[10px] lglaptop:gap-[14px] h-fit">
+            <div className="grid gap-[10px] lglaptop:gap-[14px] h-fit">
                 <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">Home</h3>
-                <ul className="grid gap-[4px]">
-                  <li>Benefits</li>
-                  <li>Our Courses</li>
-                  <li>Our Testimonials</li>
-                  <li>FAQs</li>
+                <ul className="grid gap-[7px] pl-1">
+                  <li><span className="text-orange50">•</span> Benefits</li>
+                  <li><span className="text-orange50">•</span> Our Courses</li>
+                  <li><span className="text-orange50">•</span> Our Testimonials</li>
+                  <li><span className="text-orange50">•</span> FAQs</li>
                 </ul>
-              </div>
+            </div>
 
-              <div className="grid gap-[10px] lglaptop:gap-[14px] h-fit">
+            <div className="grid gap-[10px] lglaptop:gap-[14px] h-fit">
                 <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">About Us</h3>
                 <ul className="grid gap-[4px]">
-                  <li>Company</li>
-                  <li>Achivements</li>
-                  <li>Our Goals</li>
+                  <li><span className="text-orange50">•</span> Company</li>
+                  <li><span className="text-orange50">•</span> Achivements</li>
+                  <li><span className="text-orange50">•</span> Our Goals</li>
                 </ul>
-              </div>
+            </div>
 
-              <div className="grid gap-[10px] lglaptop:gap-[14px] h-fit">
+            <div className="grid gap-[10px] lglaptop:gap-[14px] h-fit w-fit">
                 <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">Social Profiles</h3>
-                <div className="grid grid-flow-col">
+                <div className="grid grid-flow-col gap-[15px]">
 
                   <div className="w-[44px] xltablet:w-[48px] lglaptop:w-[54px]">
                     <img src={Facebook} alt="" />
@@ -83,7 +84,6 @@ const Footer = () => {
                   </div>
 
                 </div>
-              </div>
             </div>
             
           </div>
