@@ -153,7 +153,17 @@ const Header = () => {
                         backdrop-saturate-[180%]
                         bg-[rgba(160, 225, 255, 0.5)]
                         ">
-                          <div className='absolute right-[10px] top-[5px] w-[250px] h-fit bg-absoluteWhite py-[30px]'>
+                          <div className='absolute right-[10px] rounded-[10px] top-[5px] w-[250px] h-fit bg-absoluteWhite pt-[10px] pb-[30px]'>
+
+                            <div className="
+                            hover:cursor-pointer
+                            hover:scale-110 duration-300
+                            flex justify-end pr-[20px] mb-[30px]
+                            " onClick={dropdown}>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="size-8">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                              </svg>
+                            </div>
                             <MobileMenu />
                           </div>
 
