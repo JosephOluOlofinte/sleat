@@ -1,9 +1,19 @@
-// import React from 'react'
+import React from 'react'
 
 import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/img/Logo.png'
+import MobileMenu from './MobileMenu';
 
 const Header = () => {
+
+  // Dropdown state: showDropdown/!showDropdown
+
+  const [showDropdown, setDropdownState] = React.useState(false);
+
+  const dropdown = () => {
+    setDropdownState(!showDropdown);
+  };
+
   return (
     <header className="
         bg-absoluteWhite
@@ -122,12 +132,50 @@ const Header = () => {
                 laptop:h-[50px] laptop:w-[100px]
                 ">Sign In</button>
               </a>
-              <a href="" className="min-[790px]:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-[34px] w-[34px]">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-              </svg>
-              </a>
+
+              { showDropdown ?
+              
+                null :
+
+                <div className="min-[790px]:hidden hover:cursor-pointer
+                hover:scale-110 duration-400" onClick={dropdown}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-[34px] w-[34px]">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                  </svg>
+                </div>
+              }
+
+              { showDropdown ?
+                    <div className="
+                        w-screen h-screen
+                        fixed top-0 left-0
+                        backdrop-blur-sm
+                        backdrop-saturate-[180%]
+                        bg-[rgba(160, 225, 255, 0.5)]
+                        ">
+                          <div className='absolute right-[10px] top-[20px] w-[200px] h-fit'>
+                            <MobileMenu />
+                          </div>
+
+                            <div className="
+                            md:hidden bg-textBlue
+                            text-bgBlue p-1 rounded-md
+                            fixed top-5 right-5
+                            hover:cursor-pointer
+                            hover:scale-110 duration-300
+                            " onClick={dropdown}>
+
+                                {/* <CloseIcon /> */}
+
+                            </div>
+
+                    </div>
+                    :
+                    null
+                }
+
             </div>
+
           </div>
 
         </header>
