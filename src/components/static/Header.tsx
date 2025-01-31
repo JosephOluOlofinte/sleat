@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/img/Logo.png'
 
 const Header = () => {
@@ -48,36 +49,52 @@ const Header = () => {
                 min-[790px]:flex 
                 desktop:gap-3
                 ">
-                  <li><a href="" className="
-                  py-[12px] px-[20px]
-                  animate-bounce
-                  hover:bg-orange95
-                  ease-in-out duration-500 rounded-[5px]
-                  ">Home</a></li>
-                  <li><a href="" className="
-                  py-[12px] px-[20px]
-                  animate-bounce
-                  hover:bg-orange95
-                  ease-in-out duration-500 rounded-[5px]
-                  ">Courses</a></li>
-                  <li><a href="" className="
-                  py-[12px] px-[20px]
-                  animate-bounce
-                  hover:bg-orange95
-                  ease-in-out duration-500 rounded-[5px]
-                  ">About Us</a></li>
-                  <li><a href="" className="
-                  py-[12px] px-[20px]
-                  animate-bounce
-                  hover:bg-orange95
-                  ease-in-out duration-500 rounded-[5px]
-                  ">Pricing</a></li>
-                  <li><a href="" className="
-                  py-[12px] px-[20px]
-                  animate-bounce
-                  hover:bg-orange95
-                  ease-in-out duration-500 rounded-[5px]
-                  ">Contact</a></li>
+                  <li>
+                    <NavLink to="/" className="
+                      py-[12px] px-[20px]
+                      animate-bounce
+                      hover:bg-orange95
+                      ease-in-out duration-500 rounded-[5px]
+                      ">Home
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="" className="
+                      py-[12px] px-[20px]
+                      animate-bounce
+                      hover:bg-orange95
+                      ease-in-out duration-500 rounded-[5px]
+                      ">
+                        Courses
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/about" className="
+                      py-[12px] px-[20px]
+                      animate-bounce
+                      hover:bg-orange95
+                      ease-in-out duration-500 rounded-[5px]
+                      ">About Us 
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="" className="
+                      py-[12px] px-[20px]
+                      animate-bounce
+                      hover:bg-orange95
+                      ease-in-out duration-500 rounded-[5px]
+                      ">Pricing
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="" className="
+                      py-[12px] px-[20px]
+                      animate-bounce
+                      hover:bg-orange95
+                      ease-in-out duration-500 rounded-[5px]
+                      ">Contact
+                    </NavLink>
+                  </li>
                 </ul>
               </nav>
             </div>
