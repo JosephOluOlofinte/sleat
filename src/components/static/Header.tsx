@@ -117,13 +117,13 @@ const Header = () => {
             xltablet:gap-[20px]
             desktop:gap-[25px]
             ">
-              <a href="">
+              <NavLink to="">
                 <button className="
                 h-[45px]
                 laptop:h-[55px]
                 ">Sign Up</button>
-              </a>
-              <a href="">
+              </NavLink>
+              <NavLink to="">
                 <button className="
                 bg-orange50
                 rounded-[5px]
@@ -131,7 +131,7 @@ const Header = () => {
                 h-[45px] w-[85px]
                 laptop:h-[50px] laptop:w-[100px]
                 ">Sign In</button>
-              </a>
+              </NavLink>
 
               { showDropdown ?
               
@@ -153,7 +153,7 @@ const Header = () => {
                         backdrop-saturate-[180%]
                         bg-[rgba(160, 225, 255, 0.5)]
                         ">
-                          <div className='absolute right-[10px] top-[20px] w-[200px] h-fit'>
+                          <div className='absolute right-[10px] top-[5px] w-[250px] h-fit bg-absoluteWhite py-[30px]'>
                             <MobileMenu />
                           </div>
 
