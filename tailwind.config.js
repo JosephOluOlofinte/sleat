@@ -10,7 +10,7 @@ export default {
       'xlmobile': '480px',
       'tablet': '640px',
       'xltablet': '768px',
-      'laptop': '1044px',
+      'laptop': '1024px',
       'lglaptop': '1280px',
       'desktop': '1920px',
     },

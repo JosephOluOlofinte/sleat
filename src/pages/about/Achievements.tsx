@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import { Fragment } from "react/jsx-runtime"
+import { BenefitsCard } from "../../components"
 
 
 
@@ -22,7 +23,9 @@ const Achievements = () => {
           </div>
 
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-[20px] lglaptop:gap-[30px]">
-            <div>1</div>
+
+            <BenefitsCard noArrow withIcon icon="" title="Trusted by Thousands" desc="We have successfully served thousands of students, helping them unlock their potential and achieve their career goals." />
+
             <div>2</div>
             <div>3</div>
             <div>4</div>
