@@ -149,11 +149,11 @@ const Header = () => {
                     <div className="
                         w-screen h-screen
                         fixed top-0 left-0
-                        backdrop-blur-sm
+                        backdrop-blur-sm text-[rgb(255,149,0,0.7)]
                         backdrop-saturate-[180%]
-                        bg-[rgba(160, 225, 255, 0.5)]
+                        bg-[rgba(255,149,0,0.015)]
                         ">
-                          <div className='absolute right-[10px] rounded-[10px] top-[5px] w-[250px] h-fit bg-absoluteWhite pt-[10px] pb-[30px]'>
+                          <div className='absolute right-[12px] rounded-[10px] top-[5px] w-[300px] h-fit bg-absoluteWhite pl-[30px] pt-[15px] pb-[30px] shadow-[5px_10px_30px_-5px_rgba(255,149,0,0.2)]'>
 
                             <div className="
                             hover:cursor-pointer

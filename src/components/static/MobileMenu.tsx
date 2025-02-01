@@ -8,10 +8,10 @@ const MobileMenu = () => {
     <Fragment>
 
         <nav className='grid gap-[30px]'>
-            <ul className="grid gap-6">
+            <ul className="grid gap-7">
                 <li>
                 <NavLink to="/" className="
-                    py-[12px] px-[20px] text-[18px] font-medium
+                    text-[18px] font-medium
                     animate-bounce
                     hover:bg-orange95
                     ease-in-out duration-500 rounded-[5px]
@@ -20,7 +20,7 @@ const MobileMenu = () => {
                 </li>
                 <li>
                 <NavLink to="" className="
-                    py-[12px] px-[20px] text-[18px] font-medium
+                    text-[18px] font-medium
                     animate-bounce
                     hover:bg-orange95
                     ease-in-out duration-500 rounded-[5px]
@@ -30,7 +30,7 @@ const MobileMenu = () => {
                 </li>
                 <li>
                 <NavLink to="/about" className="
-                    py-[12px] px-[20px] text-[18px] font-medium
+                    text-[18px] font-medium
                     animate-bounce
                     hover:bg-orange95
                     ease-in-out duration-500 rounded-[5px]
@@ -39,7 +39,7 @@ const MobileMenu = () => {
                 </li>
                 <li>
                 <NavLink to="" className="
-                    py-[12px] px-[20px] text-[18px] font-medium
+                    text-[18px] font-medium
                     animate-bounce
                     hover:bg-orange95
                     ease-in-out duration-500 rounded-[5px]
@@ -48,7 +48,7 @@ const MobileMenu = () => {
                 </li>
                 <li>
                 <NavLink to="" className="
-                    py-[12px] px-[20px] text-[18px] font-medium
+                    text-[18px] font-medium
                     animate-bounce
                     hover:bg-orange95
                     ease-in-out duration-500 rounded-[5px]
@@ -62,7 +62,7 @@ const MobileMenu = () => {
             flex items-center gap-[10px]
             text-grey15
             h-[45px]
-            py-[12px] px-[20px]
+            pt-[40px] pb-[25px]
             ">
                 <NavLink to="">
                 <Button text='Sign Up' size='large' variant="whiteBtn" className='border-[1px] border-orange50' />
