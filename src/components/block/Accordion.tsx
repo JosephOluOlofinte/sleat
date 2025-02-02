@@ -67,7 +67,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, description, withBtn, btnT
 
         { withBtn ? 
         <Button variant="greyBtn" size="medium" className='flex justify-between items-center mt-[20px] laptop:mt-[40px] desktop:mt-[50px] ' url={btnUrl}> 
-          <p className='font-medium text-grey30'>{btnText}</p>
+          <p className='font-medium text-grey30' >{btnText}</p>
 
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="stroke-grey30 size-10 laptop:size-12 desktop:size-14 bg-absoluteWhite rounded-full m-0 leading-none">
             <path strokeLinecap="round" strokeLinejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7" />

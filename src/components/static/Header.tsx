@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 
 import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/img/Logo.png'
@@ -8,10 +8,10 @@ const Header = () => {
 
   // Dropdown state: showDropdown/!showDropdown
 
-  const [showDropdown, setDropdownState] = React.useState(false);
+  const [showDropdown, setDropdownState] = useState(false);
 
   const dropdown = () => {
-    setDropdownState(!showDropdown);
+    setDropdownState((prev) => !prev);
   };
 
   return (
@@ -146,40 +146,39 @@ const Header = () => {
               }
 
               { showDropdown ?
+
+                  <>
                     <div className="
-                        w-screen h-screen
-                        fixed top-0 left-0
-                        backdrop-blur-sm text-[rgb(255,149,0,0.7)]
-                        backdrop-saturate-[180%]
-                        bg-[rgba(255,149,0,0.015)]
-                        ">
-                          <div className='absolute right-[12px] rounded-[10px] top-[5px] w-[300px] h-fit bg-absoluteWhite pl-[30px] pt-[15px] pb-[30px] shadow-[5px_10px_30px_-5px_rgba(255,149,0,0.2)]'>
+                      w-screen h-screen z-20
+                      fixed top-0 left-0
+                      backdrop-blur-sm text-[rgb(255,149,0,0.7)]
+                      backdrop-saturate-[180%]
+                      bg-[rgba(255,149,0,0.015)]
+                      " onClick={dropdown}>
+                    </div>
+                    
+                    <div className='rounded-[10px] top-[5px] w-[300px] h-fit bg-absoluteWhite pl-[30px] pt-[15px] pb-[30px] shadow-[5px_10px_30px_-5px_rgba(255,149,0,0.2)] z-30' 
+                    style={
+                      { 
+                        position: 'absolute',
+                        right: showDropdown ? '15px' : '-100%',
+                         }}>
 
-                            <div className="
-                            hover:cursor-pointer
-                            hover:scale-110 duration-300
-                            flex justify-end pr-[20px] mb-[30px]
-                            " onClick={dropdown}>
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="size-8">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-                              </svg>
-                            </div>
-                            <MobileMenu />
-                          </div>
-
-                            <div className="
-                            md:hidden bg-textBlue
-                            text-bgBlue p-1 rounded-md
-                            fixed top-5 right-5
-                            hover:cursor-pointer
-                            hover:scale-110 duration-300
-                            " onClick={dropdown}>
-
-                                {/* <CloseIcon /> */}
-
-                            </div>
+                      <div className="
+                      hover:cursor-pointer
+                      hover:scale-110 duration-300
+                      flex justify-end pr-[20px] mb-[30px]
+                      " onClick={dropdown}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="size-8">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                      </div>
+                      <MobileMenu />
 
                     </div>
+                  </>
+
+                    
                     :
                     null
                 }
