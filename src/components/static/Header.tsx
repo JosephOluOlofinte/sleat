@@ -161,7 +161,8 @@ const Header = () => {
                     style={
                       { 
                         position: 'absolute',
-                        right: showDropdown ? '15px' : '-100%',
+                        // right: showDropdown ? '15px' : '-100%',
+                        transition: '1s ease-out'
                          }}>
 
                       <div className="
