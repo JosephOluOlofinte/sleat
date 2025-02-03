@@ -157,26 +157,22 @@ const Header = () => {
                       " onClick={dropdown}>
                     </div>
                     
-                    <div className='rounded-[10px] top-[5px] w-[300px] h-fit bg-absoluteWhite pl-[30px] pt-[15px] pb-[30px] shadow-[5px_10px_30px_-5px_rgba(255,149,0,0.2)] z-30' 
-                    style={
-                      { 
-                        position: 'absolute',
-                        // right: showDropdown ? '15px' : '-100%',
-                        transition: '1s ease-out'
-                         }}>
+                    <div className={` z-30 `}>
+                      <div className={`rounded-[10px] w-[300px] h-fit bg-absoluteWhite pl-[30px] pt-[15px] pb-[30px] shadow-[5px_10px_30px_-5px_rgba(255,149,0,0.2)]`}>
 
-                      <div className="
-                      hover:cursor-pointer
-                      hover:scale-110 duration-300
-                      flex justify-end pr-[20px] mb-[30px]
-                      " onClick={dropdown}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="size-8">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-                        </svg>
+                        <div className="
+                        hover:cursor-pointer
+                        hover:scale-110 duration-300
+                        flex justify-end pr-[20px] mb-[30px]
+                        " onClick={dropdown}>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="size-8">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+                          </svg>
+                        </div>
+                        <MobileMenu />
                       </div>
-                      <MobileMenu />
-
                     </div>
+                    
                   </>
 
                     
