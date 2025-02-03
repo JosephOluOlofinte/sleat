@@ -12,8 +12,9 @@ const MobileMenu = () => {
                 <li>
                 <NavLink to="/" className="
                     text-[18px] font-medium
-                    animate-bounce
-                    hover:bg-orange95
+                    hover:transition-all
+                    hover:text-orange50
+                    hover:translate-x-1 
                     ease-in-out duration-500 rounded-[5px]
                     ">Home
                 </NavLink>
@@ -21,8 +22,7 @@ const MobileMenu = () => {
                 <li>
                 <NavLink to="" className="
                     text-[18px] font-medium
-                    animate-bounce
-                    hover:bg-orange95
+                    hover:text-orange50
                     ease-in-out duration-500 rounded-[5px]
                     ">
                     Courses
@@ -31,8 +31,7 @@ const MobileMenu = () => {
                 <li>
                 <NavLink to="/about" className="
                     text-[18px] font-medium
-                    animate-bounce
-                    hover:bg-orange95
+                    hover:text-orange50
                     ease-in-out duration-500 rounded-[5px]
                     ">About Us 
                 </NavLink>
@@ -40,8 +39,7 @@ const MobileMenu = () => {
                 <li>
                 <NavLink to="" className="
                     text-[18px] font-medium
-                    animate-bounce
-                    hover:bg-orange95
+                    hover:text-orange50
                     ease-in-out duration-500 rounded-[5px]
                     ">Pricing
                 </NavLink>
@@ -49,8 +47,7 @@ const MobileMenu = () => {
                 <li>
                 <NavLink to="" className="
                     text-[18px] font-medium
-                    animate-bounce
-                    hover:bg-orange95
+                    hover:text-orange50
                     ease-in-out duration-500 rounded-[5px]
                     ">Contact
                 </NavLink>
@@ -65,7 +62,7 @@ const MobileMenu = () => {
             pt-[40px] pb-[25px]
             ">
                 <NavLink to="">
-                <Button text='Sign Up' size='large' variant="whiteBtn" className='border-[1px] border-orange50' />
+                <Button text='Sign Up' size='large' variant="whiteBtn" className='border-[1px] border-orange50 hover:bg-orange90' />
                 </NavLink>
                 <NavLink to="">
                 <Button text="Sign In" size="large" className='border-[1px] border-orange50' />

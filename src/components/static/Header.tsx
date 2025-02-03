@@ -134,9 +134,6 @@ const Header = () => {
                 ">Sign In</button>
               </NavLink>
 
-              { showDropdown ?
-              
-                null :
 
                 <div className="min-[790px]:hidden hover:cursor-pointer
                 hover:scale-110 duration-400" onClick={dropdown}>
@@ -144,25 +141,21 @@ const Header = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
                   </svg>
                 </div>
-              }
 
-              { showDropdown ?
 
-                  <>
-                    <div className="
+                    <div className={`
                       w-screen h-screen z-20
                       fixed top-0 left-0
                       backdrop-blur-sm text-[rgb(255,149,0,0.7)]
                       backdrop-saturate-[180%]
                       bg-[rgba(255,149,0,0.015)]
-                      " onClick={dropdown}>
+                      ${showDropdown ? 'translate-x-0' : '-translate-x-[130%]'}
+                      transition-all ease-in-out duration-[1.5s]
+                      `} onClick={dropdown}>
                     </div>
-                    </>                  
-                :
-                null
-              }
+
                     
-                    <div className={` z-30 ${showDropdown ? 'translate-x-0' : 'translate-x-[130%]'} absolute top-[5px] right-0 transition-all ease-in-out duration-700 `}>
+                    <div className={`z-30 ${showDropdown ? 'translate-x-0' : 'translate-x-[130%]'} fixed top-[5px] right-0 transition-all ease-in-out duration-[1.5s]`}>
                       <div className={`rounded-[10px] w-[300px] h-fit bg-absoluteWhite pl-[30px] pt-[15px] pb-[30px] shadow-[5px_10px_30px_-5px_rgba(255,149,0,0.2)]`}>
 
                         <div className="
