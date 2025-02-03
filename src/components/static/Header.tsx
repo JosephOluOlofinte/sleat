@@ -19,7 +19,8 @@ const Header = () => {
         bg-absoluteWhite
         flex flex-col items-center
         h-[130px] w-[100%]
-        pt-[10px]
+        pt-[10px] 
+        overflow-hidden
         ">
 
           <a className="
@@ -38,7 +39,7 @@ const Header = () => {
           #actualHeader
           flex justify-between items-center
           h-[80px] w-[90%]
-          desktop:w-[80%]
+          desktop:w-[80%] 
           ">
             <div className="
             #logo+nav
@@ -113,7 +114,7 @@ const Header = () => {
             #buttons
             flex justify-between items-center gap-[15px]
             text-grey15
-            h-[45px]
+            h-[45px] 
             xltablet:gap-[20px]
             desktop:gap-[25px]
             ">
@@ -156,8 +157,12 @@ const Header = () => {
                       bg-[rgba(255,149,0,0.015)]
                       " onClick={dropdown}>
                     </div>
+                    </>                  
+                :
+                null
+              }
                     
-                    <div className={` z-30 `}>
+                    <div className={` z-30 ${showDropdown ? 'translate-x-0' : 'translate-x-[130%]'} absolute top-[5px] right-0 transition-all ease-in-out duration-700 `}>
                       <div className={`rounded-[10px] w-[300px] h-fit bg-absoluteWhite pl-[30px] pt-[15px] pb-[30px] shadow-[5px_10px_30px_-5px_rgba(255,149,0,0.2)]`}>
 
                         <div className="
@@ -172,13 +177,8 @@ const Header = () => {
                         <MobileMenu />
                       </div>
                     </div>
-                    
-                  </>
 
-                    
-                    :
-                    null
-                }
+
 
             </div>
 
