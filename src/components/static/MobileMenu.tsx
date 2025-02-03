@@ -14,6 +14,7 @@ const MobileMenu = () => {
                     text-[18px] font-medium
                     hover:transition-all
                     hover:text-orange50
+                    focus:text-orange50 focus:pl-3
                     hover:translate-x-1 
                     ease-in-out duration-500 rounded-[5px]
                     ">Home
@@ -23,6 +24,7 @@ const MobileMenu = () => {
                 <NavLink to="" className="
                     text-[18px] font-medium
                     hover:text-orange50
+                    focus:text-orange50 focus:pl-3
                     ease-in-out duration-500 rounded-[5px]
                     ">
                     Courses
@@ -32,6 +34,7 @@ const MobileMenu = () => {
                 <NavLink to="/about" className="
                     text-[18px] font-medium
                     hover:text-orange50
+                    focus:text-orange50 focus:pl-3
                     ease-in-out duration-500 rounded-[5px]
                     ">About Us 
                 </NavLink>
@@ -40,6 +43,7 @@ const MobileMenu = () => {
                 <NavLink to="" className="
                     text-[18px] font-medium
                     hover:text-orange50
+                    focus:text-orange50 focus:pl-3
                     ease-in-out duration-500 rounded-[5px]
                     ">Pricing
                 </NavLink>
@@ -48,6 +52,7 @@ const MobileMenu = () => {
                 <NavLink to="" className="
                     text-[18px] font-medium
                     hover:text-orange50
+                    focus:text-orange50 focus:pl-3
                     ease-in-out duration-500 rounded-[5px]
                     ">Contact
                 </NavLink>
