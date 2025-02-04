@@ -3,14 +3,8 @@
 {
     "routes": [
 
-        {
-            "src": "/",
-            "dest": "/"
-        },
-    
-        {
-            "src": "/about",
-            "dest": "/"
-        }
+        { "src": "/", "dest": "/" },
+        { "src": "/about", "dest": "/" },
+        { "src": "/pricing", "dest": "/" }
     ]
 }
