@@ -41,7 +41,10 @@ const WebDesign = () => {
                     <p className="pl-[5px] laptop:pl-[0] font-medium text-[16px] desktop:text-[18px]">By John Smith</p>
                     </a>
                 </div>
-            </div>
+              </div>
+
+              {/* CURRICULUM */}
+              <div>Curriculum</div>
             </div>
         </section>
     </Fragment>
