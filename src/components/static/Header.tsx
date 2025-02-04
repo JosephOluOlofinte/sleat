@@ -48,10 +48,12 @@ const Header = () => {
             desktop:gap-[45px]
             ">
               <div>
-                <img src={Logo} alt="" className="
-                h-[45px]
-                laptop:h-[55px]
-                "/>
+                <NavLink to="/">
+                  <img src={Logo} alt="" className="
+                  h-[45px]
+                  laptop:h-[55px]
+                  "/>
+                </NavLink>
               </div>
               <nav>
                 <ul className="
@@ -89,7 +91,7 @@ const Header = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="" className="
+                    <NavLink to="/pricing" className="
                       py-[12px] px-[20px]
                       animate-bounce
                       hover:bg-orange95
@@ -167,7 +169,7 @@ const Header = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                           </svg>
                         </div>
-                        <MobileMenu />
+                        <MobileMenu onClick={dropdown}/>
                       </div>
                     </div>
 

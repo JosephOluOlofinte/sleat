@@ -2,7 +2,11 @@ import { Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Button } from '../block'
 
-const MobileMenu = () => {
+type iMobileMenu = {
+    onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
+}
+
+const MobileMenu: React.FC<iMobileMenu> = ({onClick}) => {
   return (
     
     <Fragment>
@@ -17,7 +21,7 @@ const MobileMenu = () => {
                     focus:text-orange50 focus:pl-3
                     hover:translate-x-1 
                     ease-in-out duration-500 rounded-[5px]
-                    ">Home
+                    " onClick={onClick}>Home
                 </NavLink>
                 </li>
                 <li>
@@ -26,7 +30,7 @@ const MobileMenu = () => {
                     hover:text-orange50
                     focus:text-orange50 focus:pl-3
                     ease-in-out duration-500 rounded-[5px]
-                    ">
+                    " onClick={onClick}>
                     Courses
                 </NavLink>
                 </li>
@@ -36,7 +40,17 @@ const MobileMenu = () => {
                     hover:text-orange50
                     focus:text-orange50 focus:pl-3
                     ease-in-out duration-500 rounded-[5px]
-                    ">About Us 
+                    " onClick={onClick}>
+                        About Us 
+                </NavLink>
+                </li>
+                <li>
+                <NavLink to="/pricing" className="
+                    text-[18px] font-medium
+                    hover:text-orange50
+                    focus:text-orange50 focus:pl-3
+                    ease-in-out duration-500 rounded-[5px]
+                    " onClick={onClick}>Pricing
                 </NavLink>
                 </li>
                 <li>
@@ -45,16 +59,7 @@ const MobileMenu = () => {
                     hover:text-orange50
                     focus:text-orange50 focus:pl-3
                     ease-in-out duration-500 rounded-[5px]
-                    ">Pricing
-                </NavLink>
-                </li>
-                <li>
-                <NavLink to="" className="
-                    text-[18px] font-medium
-                    hover:text-orange50
-                    focus:text-orange50 focus:pl-3
-                    ease-in-out duration-500 rounded-[5px]
-                    ">Contact
+                    " onClick={onClick}>Contact
                 </NavLink>
                 </li>
             </ul>
@@ -66,10 +71,10 @@ const MobileMenu = () => {
             h-[45px]
             pt-[40px] pb-[25px]
             ">
-                <NavLink to="">
+                <NavLink to="" onClick={onClick}>
                 <Button text='Sign Up' size='large' variant="whiteBtn" className='border-[1px] border-orange50 hover:bg-orange90' />
                 </NavLink>
-                <NavLink to="">
+                <NavLink to="" onClick={onClick}>
                 <Button text="Sign In" size="large" className='border-[1px] border-orange50' />
                 </NavLink>
             </div>
