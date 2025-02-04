@@ -5,7 +5,7 @@ import Layout from "../layout/Layout";
 import HomeComp from "../pages/home/HomeComp";
 import AboutComp from "../pages/about/AboutComp";
 import Pricing from "../pages/pricing/Pricing"
-import CoursesComp from "../pages/courses/CoursesComp";
+import CoursesComp from "../pages/courseslist/CoursesComp";
 
 export const element = createBrowserRouter ([
 
