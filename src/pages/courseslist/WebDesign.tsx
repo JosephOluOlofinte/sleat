@@ -2,6 +2,7 @@
 
 import { Fragment } from "react/jsx-runtime"
 import { Button } from "../../components"
+import image from "../../assets/img/webDevCourse.png"
 
 const WebDesign = () => {
   return (
@@ -25,7 +26,11 @@ const WebDesign = () => {
 
               {/* IMAGES, DURATION, LEVEL, AND AUTHOR */}
               <div className='grid gap-[20px]'>
-                <a href=""><img src="" alt="" /></a>
+                <div className="flex gap-[20px]">
+                  <a href=""><img src={image} alt="" /></a>
+                  <a href=""><img src={image} alt="" /></a>
+                  <a href=""><img src={image} alt="" /></a>
+                </div>
 
                 <div className="w-[100%] flex items-start flex-col gap-[16px] tablet:flex-row tablet:items-center xltablet:flex-col xltablet:items-start laptop:flex-row laptop:items-center tablet:justify-between ">
                     <div className="w-[100%] tablet:w-auto flex justify-between tablet:justify-normal tablet:gap-[12px] xltablet:w-[100%] xltablet:justify-between laptop:justify-normal laptop:w-auto ">
