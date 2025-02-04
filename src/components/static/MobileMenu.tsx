@@ -25,7 +25,7 @@ const MobileMenu: React.FC<iMobileMenu> = ({onClick}) => {
                 </NavLink>
                 </li>
                 <li>
-                <NavLink to="" className="
+                <NavLink to="/courses" className="
                     text-[18px] font-medium
                     hover:text-orange50
                     focus:text-orange50 focus:pl-3

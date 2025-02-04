@@ -72,7 +72,7 @@ const Header = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="" className="
+                    <NavLink to="/courses" className="
                       py-[12px] px-[20px]
                       animate-bounce
                       hover:bg-orange95

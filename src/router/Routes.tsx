@@ -5,6 +5,7 @@ import Layout from "../layout/Layout";
 import HomeComp from "../pages/home/HomeComp";
 import AboutComp from "../pages/about/AboutComp";
 import Pricing from "../pages/pricing/Pricing"
+import CoursesComp from "../pages/courses/CoursesComp";
 
 export const element = createBrowserRouter ([
 
@@ -14,7 +15,8 @@ export const element = createBrowserRouter ([
         children: [
             { path: "/", element: <HomeComp /> },
             { path: "/about", element: <AboutComp /> },
-            { path: "/pricing", element: <Pricing /> }
+            { path: "/pricing", element: <Pricing /> },
+            { path: "/courses", element: <CoursesComp /> }
         ],
     },
 

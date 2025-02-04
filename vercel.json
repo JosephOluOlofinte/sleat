@@ -5,6 +5,7 @@
 
         { "src": "/", "dest": "/" },
         { "src": "/about", "dest": "/" },
-        { "src": "/pricing", "dest": "/" }
+        { "src": "/pricing", "dest": "/" },
+        { "src": "/courses", "dest": "/" }
     ]
 }
