@@ -2,7 +2,23 @@
 
 import { Fragment } from "react/jsx-runtime"
 import { Button } from "../../components"
-import image from "../../assets/img/webDevCourse.png"
+import webDesign1 from "../../assets/img/web-design-1.png";
+import webDesign2 from "../../assets/img/web-design-2.png";
+import webDesign3 from "../../assets/img/web-design-3.png";
+// import uiDesign1 from "../../assets/img/ui-design-1.png";
+// import uiDesign2 from "../../assets/img/ui-design-2.png";
+// import uiDesign3 from "../../assets/img/ui-design-3.png";
+// import mobileApp1 from "../../assets/img/mobile-app-1.png";
+// import mobileApp2 from "../../assets/img/mobile-app-2.png";
+// import mobileApp3 from "../../assets/img/mobile-app-3.png";
+// import graphicDesign1 from "../../assets/img/graphic-design-1.png";
+// import graphicDesign2 from "../../assets/img/graphic-design-2.png";
+// import graphicDesign3 from "../../assets/img/graphic-design-3.png";
+// import frontendDev1 from "../../assets/img/fronted-dev-1.png";
+// import frontendDev2 from "../../assets/img/fronted-dev-2.png";
+// import frontendDev3 from "../../assets/img/fronted-dev-3.png";
+
+
 
 const WebDesign = () => {
   return (
@@ -28,13 +44,13 @@ const WebDesign = () => {
               <div className='grid gap-[20px]'>
                 <div className="flex gap-5">
                   <a href="">
-                    <div><img src={image} alt=""  className="h-[clamp(97px,330px,425px)] w-[clamp(100px,390px,480px)]"/></div>
+                    <div><img src={webDesign1} alt=""  className=""/></div>
                   </a>
                   <a href="">
-                    <div><img src={image} alt="" className="h-[clamp(97px,330px,425px)] w-[clamp(100px,390px,480px)]"/></div>
+                    <div><img src={webDesign2} alt="" className=""/></div>
                   </a>
                   <a href="">
-                    <div><img src={image} alt=""  className="h-[clamp(97px,330px,425px)] w-[clamp(100px,390px,480px)]"/></div>
+                    <div><img src={webDesign3} alt=""  className=""/></div>
                   </a>
                 </div>
 
