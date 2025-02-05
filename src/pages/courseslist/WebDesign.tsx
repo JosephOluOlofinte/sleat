@@ -26,10 +26,16 @@ const WebDesign = () => {
 
               {/* IMAGES, DURATION, LEVEL, AND AUTHOR */}
               <div className='grid gap-[20px]'>
-                <div className="flex gap-[20px]">
-                  <a href=""><img src={image} alt="" /></a>
-                  <a href=""><img src={image} alt="" /></a>
-                  <a href=""><img src={image} alt="" /></a>
+                <div className="flex gap-5">
+                  <a href="">
+                    <div><img src={image} alt=""  className="h-[clamp(97px,330px,425px)] w-[clamp(100px,390px,480px)]"/></div>
+                  </a>
+                  <a href="">
+                    <div><img src={image} alt="" className="h-[clamp(97px,330px,425px)] w-[clamp(100px,390px,480px)]"/></div>
+                  </a>
+                  <a href="">
+                    <div><img src={image} alt=""  className="h-[clamp(97px,330px,425px)] w-[clamp(100px,390px,480px)]"/></div>
+                  </a>
                 </div>
 
                 <div className="w-[100%] flex items-start flex-col gap-[16px] tablet:flex-row tablet:items-center xltablet:flex-col xltablet:items-start laptop:flex-row laptop:items-center tablet:justify-between ">
