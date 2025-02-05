@@ -32,6 +32,7 @@ const WebDesign = () => {
             grid gap-[30px] xltablet:gap-[40px] desktop:gap-[35px] rounded-[10px]
             ">
 
+              {/* TITLE AND DESCRIPTION */}
               <div className="grid gap-[10px]">
                 <h2 className="font-semibold text-grey15 text-[18px] xltablet:text-[20px] lglaptop:text-[24px]">Web Design Fundamentals</h2>
                 <div className="grid xltablet:flex xltablet:justify-between xltablet:items-end">
@@ -42,7 +43,7 @@ const WebDesign = () => {
 
               {/* IMAGES, DURATION, LEVEL, AND AUTHOR */}
               <div className='grid gap-[20px]'>
-                <div className="flex gap-5">
+                <div className="flex gap-[10px] xltablet:gap-[20px] lglaptop:gap-[30px]">
                   <a href="">
                     <div><img src={webDesign1} alt=""  className=""/></div>
                   </a>
@@ -66,7 +67,31 @@ const WebDesign = () => {
               </div>
 
               {/* CURRICULUM */}
-              <div>Curriculum</div>
+              <div>
+                <h3>Curiculum</h3>
+                <div className="grid grid-rows-5 xltablet:grid-rows-1 xltablet:grid-cols-5">
+                  <div>
+                    <h4>01</h4>
+                    <p>Introduction</p>
+                  </div>
+                  <div>
+                    <h4>02</h4>
+                    <p>Introduction</p>
+                  </div>
+                  <div>
+                    <h4>03</h4>
+                    <p>Introduction</p>
+                  </div>
+                  <div>
+                    <h4>04</h4>
+                    <p>Introduction</p>
+                  </div>
+                  <div>
+                    <h4>05</h4>
+                    <p>Introduction</p>
+                  </div>
+                </div>
+              </div>
             </div>
         </section>
     </Fragment>
