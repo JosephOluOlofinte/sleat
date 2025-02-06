@@ -100,7 +100,7 @@ const Header = () => {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="" className="
+                    <NavLink to="/contact-us" className="
                       py-[12px] px-[20px]
                       animate-bounce
                       hover:bg-orange95
@@ -120,13 +120,13 @@ const Header = () => {
             xltablet:gap-[20px]
             desktop:gap-[25px]
             ">
-              <NavLink to="">
+              <NavLink to="/sign-up">
                 <button className="
                 h-[45px]
                 laptop:h-[55px]
                 ">Sign Up</button>
               </NavLink>
-              <NavLink to="">
+              <NavLink to="/sign-in">
                 <button className="
                 bg-orange50
                 rounded-[5px]

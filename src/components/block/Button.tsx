@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 type Variant = "primary" | "secondary" | "danger" | "whiteBtn" | "greyBtn" | "courseBtn";
 type Size = "small" | "medium" | "large";
@@ -20,7 +21,7 @@ type Size = "small" | "medium" | "large";
 
 const Button: React.FC<ButtonProps> = ({
     text,
-    url,
+    url ="",
     variant = "primary",
     size = "medium",
     type = "button",
@@ -56,11 +57,11 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <>
-    <a href={url}>
+    <NavLink to={url}>
         <button type={type} onClick={onClick} className={styles} disabled={isLoading} {...rest}> 
             {isLoading ? "Loading..." : children || text} 
         </button>
-    </a>
+    </NavLink>
   </>
   )
 }

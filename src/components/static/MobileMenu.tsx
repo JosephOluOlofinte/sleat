@@ -54,7 +54,7 @@ const MobileMenu: React.FC<iMobileMenu> = ({onClick}) => {
                 </NavLink>
                 </li>
                 <li>
-                <NavLink to="" className="
+                <NavLink to="/contact-us" className="
                     text-[18px] font-medium
                     hover:text-orange50
                     focus:text-orange50 focus:pl-3
@@ -71,10 +71,10 @@ const MobileMenu: React.FC<iMobileMenu> = ({onClick}) => {
             h-[45px]
             pt-[40px] pb-[25px]
             ">
-                <NavLink to="" onClick={onClick}>
+                <NavLink to="/sign-up" onClick={onClick}>
                 <Button text='Sign Up' size='large' variant="whiteBtn" className='border-[1px] border-orange50 hover:bg-orange90' />
                 </NavLink>
-                <NavLink to="" onClick={onClick}>
+                <NavLink to="/sign-in" onClick={onClick}>
                 <Button text="Sign In" size="large" className='border-[1px] border-orange50' />
                 </NavLink>
             </div>

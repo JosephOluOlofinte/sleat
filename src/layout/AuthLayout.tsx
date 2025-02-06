@@ -1,8 +1,15 @@
 // import React from 'react'
 
+import { Outlet } from "react-router-dom"
+import { Fragment } from "react/jsx-runtime"
+import { Header } from "../components"
+
 const AuthLayout = () => {
   return (
-    <div>AuthLayout</div>
+    <Fragment>
+      <Header />
+      <Outlet />
+    </Fragment>
   )
 }
 
