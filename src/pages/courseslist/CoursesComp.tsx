@@ -2,10 +2,8 @@
 
 import { Helmet } from "react-helmet-async"
 import { Fragment } from "react/jsx-runtime"
-import WebDesign from "./WebDesign"
-
 import CoursesDesc from "./CoursesDesc"
-import Course from "./Course"
+import CourseList from "./CourseList"
 
 const CoursesComp = () => {
   return (
@@ -17,8 +15,7 @@ const CoursesComp = () => {
         </Helmet>
 
         <CoursesDesc />
-        <WebDesign />
-        <Course />
+        <CourseList />
     </Fragment>
   )
 }

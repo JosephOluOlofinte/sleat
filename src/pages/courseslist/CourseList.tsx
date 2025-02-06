@@ -6,7 +6,7 @@ import { courseData } from "../../data";
 
 import { Fragment } from "react/jsx-runtime"
 
-const Course = () => {
+const CourseList = () => {
   return (
     <Fragment>
       {courseData.map((course) => (
@@ -16,4 +16,4 @@ const Course = () => {
   )
 }
 
-export default Course
+export default CourseList
