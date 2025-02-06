@@ -5,6 +5,7 @@ import { Fragment } from "react/jsx-runtime"
 import WebDesign from "./WebDesign"
 
 import CoursesDesc from "./CoursesDesc"
+import Course from "./Course"
 
 const CoursesComp = () => {
   return (
@@ -17,6 +18,7 @@ const CoursesComp = () => {
 
         <CoursesDesc />
         <WebDesign />
+        <Course />
     </Fragment>
   )
 }

@@ -1,0 +1,3 @@
+
+
+export { courseData } from './courseData'

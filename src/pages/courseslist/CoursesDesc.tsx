@@ -6,7 +6,7 @@ const CoursesDesc = () => {
   return (
     <Fragment>
         <main className="
-      my-[50px] xltablet:my-[80px] lglaptop:my-[100px]
+      mt-[50px] xltablet:mt-[80px] lglaptop:mt-[100px]
       flex justify-center items-center
       ">
           <div className="

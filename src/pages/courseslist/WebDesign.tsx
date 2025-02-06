@@ -24,7 +24,9 @@ const WebDesign = () => {
   return (
 
     <Fragment>
-        <section className="flex justify-center">
+        <section className="flex justify-center
+        mt-[50px] xltablet:mt-[80px] lglaptop:mt-[100px]
+        ">
             <div className="
             bg-absoluteWhite 
             min-h-[10vh] w-[90%] desktop:w-[80%]

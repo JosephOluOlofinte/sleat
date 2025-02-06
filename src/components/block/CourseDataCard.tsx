@@ -9,6 +9,7 @@ import Button from './Button';
 
 
 type CurriculumItem = {
+  id: number;
   stage: string;
   desc: string;
 }
@@ -45,7 +46,7 @@ const CourseDataCard: React.FC<iCourseDataCard> = ({
   return (
 
     <Fragment>
-      <section className="flex justify-center">
+      <section className="flex justify-center mt-[50px] xltablet:mt-[80px] lglaptop:mt-[100px]">
         <div className="
         bg-absoluteWhite 
         min-h-[10vh] w-[90%] desktop:w-[80%]
@@ -102,34 +103,21 @@ const CourseDataCard: React.FC<iCourseDataCard> = ({
             px-[30px] xltablet:px-[40px] lglaptop:px-[50px]
             ">
 
-              <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
-                <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">01</h4>
-                <p>Introduction </p> 
-              </div>
-              <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div>
+              {curriculum.map((item, index) => (
 
-              <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
-                <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">02</h4>
-                <p>Introduction</p>
-              </div>
-              <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div>
+                <>
+                  <div key={item.id} className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
+                    <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">{item.stage}</h4>
+                    <p>{item.desc} </p> 
+                  </div>
 
-              <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
-                <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">03</h4>
-                <p>Introduction</p>
-              </div>
-              <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div>
-
-              <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
-                <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">04</h4>
-                <p>Introduction</p>
-              </div>
-              <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div>
-
-              <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
-                <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">05</h4>
-                <p>Introduction</p>
-              </div>
+                  {/* Render thin line ONLY if it's NOT the last item */}
+                  {index < curriculum.length - 1 && (
+                    <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div>
+                  )}
+                </>
+                
+              ))}
 
             </div>
           </div>
