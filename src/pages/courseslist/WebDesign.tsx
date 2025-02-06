@@ -43,15 +43,15 @@ const WebDesign = () => {
 
               {/* IMAGES, DURATION, LEVEL, AND AUTHOR */}
               <div className='grid gap-[20px]'>
-                <div className="flex gap-[10px] xltablet:gap-[20px] lglaptop:gap-[30px]">
+                <div className="grid grid-cols-3 gap-[10px] xltablet:gap-[20px] lglaptop:gap-[30px]">
                   <a href="">
-                    <div><img src={webDesign1} alt=""  className="max-w-[480px]"/></div>
+                    <div className=""><img src={webDesign1} alt=""  className="object-contain"/></div>
                   </a>
                   <a href="">
-                    <div><img src={webDesign2} alt="" className="max-w-[480px]"/></div>
+                    <div className=""><img src={webDesign2} alt="" className=""/></div>
                   </a>
                   <a href="">
-                    <div><img src={webDesign3} alt=""  className="max-w-[480px]"/></div>
+                    <div className=""><img src={webDesign3} alt=""  className=""/></div>
                   </a>
                 </div>
 
@@ -74,7 +74,7 @@ const WebDesign = () => {
                 px-[20px] xltablet:px-[24px] lglaptop:px-[30px]
                 ">Curiculum</h3>
                 <div className="grid grid-flow-row xltablet:grid-flow-col
-                gap-[20px] xltablet:gap-[40px] lglaptop:gap-[50px]
+                gap-[20px] laptop:gap-[40px] lglaptop:gap-[50px]
                 py-[20px] xltablet:py-[24px] lglaptop:py-[30px]
                 px-[30px] xltablet:px-[40px] lglaptop:px-[50px]
                 ">
@@ -83,25 +83,25 @@ const WebDesign = () => {
                     <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">01</h4>
                     <p>Introduction </p> 
                   </div>
-                  <div className="border border-white95 w-[100%] h-[1px] xltablet:w-[1px] xltablet:h-[100%]"></div>
+                  <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div>
 
                   <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
                     <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">02</h4>
                     <p>Introduction</p>
                   </div>
-                  <div className="border w-[100%] h-[1px] xltablet:w-[1px] xltablet:h-[100%]"></div>
+                  <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div>
 
                   <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
                     <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">03</h4>
                     <p>Introduction</p>
                   </div>
-                  <div className="border w-[100%] h-[1px] xltablet:w-[1px] xltablet:h-[100%]"></div>
+                  <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div>
 
                   <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
                     <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">04</h4>
                     <p>Introduction</p>
                   </div>
-                  <div className="border w-[100%] h-[1px] xltablet:w-[1px] xltablet:h-[100%]"></div>
+                  <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div>
 
                   <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
                     <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">05</h4>
