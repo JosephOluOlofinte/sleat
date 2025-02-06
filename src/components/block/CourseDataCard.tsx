@@ -96,7 +96,7 @@ const CourseDataCard: React.FC<iCourseDataCard> = ({
             border-b border-white95
             py-[14px] xltablet:py-[20px] lglaptop:py-[24px]
             px-[20px] xltablet:px-[24px] lglaptop:px-[30px]
-            ">Curiculum</h3>
+            ">Curriculum</h3>
             <div className="grid grid-flow-row xltablet:grid-flow-col
             gap-[20px] laptop:gap-[40px] lglaptop:gap-[50px]
             py-[20px] xltablet:py-[24px] lglaptop:py-[30px]
