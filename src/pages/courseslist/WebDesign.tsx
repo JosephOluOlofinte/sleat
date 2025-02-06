@@ -28,7 +28,7 @@ const WebDesign = () => {
             <div className="
             bg-absoluteWhite 
             min-h-[10vh] w-[90%] desktop:w-[80%]
-            p-[24px] laptop:p-[30px] desktop:p-[40px] 
+            p-[24px] laptop:p-[40px] desktop:p-[50px] 
             grid gap-[30px] xltablet:gap-[40px] desktop:gap-[35px] rounded-[10px]
             ">
 
@@ -45,13 +45,13 @@ const WebDesign = () => {
               <div className='grid gap-[20px]'>
                 <div className="flex gap-[10px] xltablet:gap-[20px] lglaptop:gap-[30px]">
                   <a href="">
-                    <div><img src={webDesign1} alt=""  className=""/></div>
+                    <div><img src={webDesign1} alt=""  className="max-w-[480px]"/></div>
                   </a>
                   <a href="">
-                    <div><img src={webDesign2} alt="" className=""/></div>
+                    <div><img src={webDesign2} alt="" className="max-w-[480px]"/></div>
                   </a>
                   <a href="">
-                    <div><img src={webDesign3} alt=""  className=""/></div>
+                    <div><img src={webDesign3} alt=""  className="max-w-[480px]"/></div>
                   </a>
                 </div>
 
@@ -81,7 +81,7 @@ const WebDesign = () => {
 
                   <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
                     <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">01</h4>
-                    <p>Introduction</p> 
+                    <p>Introduction </p> 
                   </div>
                   <div className="border border-white95 w-[100%] h-[1px] xltablet:w-[1px] xltablet:h-[100%]"></div>
 
