@@ -43,16 +43,13 @@ const WebDesign = () => {
 
               {/* IMAGES, DURATION, LEVEL, AND AUTHOR */}
               <div className='grid gap-[20px]'>
+
                 <div className="grid grid-cols-3 gap-[10px] xltablet:gap-[20px] lglaptop:gap-[30px]">
-                  <a href="">
+
                     <div className=""><img src={webDesign1} alt=""  className="object-contain"/></div>
-                  </a>
-                  <a href="">
                     <div className=""><img src={webDesign2} alt="" className=""/></div>
-                  </a>
-                  <a href="">
                     <div className=""><img src={webDesign3} alt=""  className=""/></div>
-                  </a>
+                    
                 </div>
 
                 <div className="w-[100%] flex items-start flex-col gap-[16px] tablet:flex-row tablet:items-center xltablet:flex-col xltablet:items-start laptop:flex-row laptop:items-center tablet:justify-between ">

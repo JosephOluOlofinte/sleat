@@ -3,11 +3,7 @@
 import { Helmet } from "react-helmet-async"
 import { Fragment } from "react/jsx-runtime"
 import WebDesign from "./WebDesign"
-import UiUx from "./UiUx"
-import MobileApp from "./MobileApp"
-import Graphics from "./Graphics"
-import Frontend from "./Frontend"
-import AdvJavascript from "./AdvJavascript"
+
 import CoursesDesc from "./CoursesDesc"
 
 const CoursesComp = () => {
@@ -21,11 +17,6 @@ const CoursesComp = () => {
 
         <CoursesDesc />
         <WebDesign />
-        <UiUx />
-        <MobileApp />
-        <Graphics />
-        <Frontend />
-        <AdvJavascript />
     </Fragment>
   )
 }

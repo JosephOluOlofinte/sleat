@@ -2,6 +2,8 @@
 import React from 'react'
 import Button from './Button';
 
+// THIS IS THE COURSE CARD USED ON THE HOMEPAGE
+
 interface CourseCardProps {
     image: string;
     imageLink?: string;
