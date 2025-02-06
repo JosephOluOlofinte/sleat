@@ -1,11 +1,12 @@
 
 
-export const courseDetails = [
+export const courseData = [
     
     {
         id: 1,
         title: "Web Design Fundamentals",
         desc: "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
+        courseUrl: "",
         images: [
             "../assets/img/web-design-1.png",
             "../assets/img/web-design-2.png",
