@@ -67,29 +67,47 @@ const WebDesign = () => {
               </div>
 
               {/* CURRICULUM */}
-              <div>
-                <h3>Curiculum</h3>
-                <div className="grid grid-rows-5 xltablet:grid-rows-1 xltablet:grid-cols-5">
-                  <div>
-                    <h4>01</h4>
+              <div className="border border-white95 rounded-[10px]">
+                <h3 className="text-[18px] xltablet:text-[20px] lglaptop:text-[22px] 
+                border-b border-white95
+                py-[14px] xltablet:py-[20px] lglaptop:py-[24px]
+                px-[20px] xltablet:px-[24px] lglaptop:px-[30px]
+                ">Curiculum</h3>
+                <div className="grid grid-flow-row xltablet:grid-flow-col
+                gap-[20px] xltablet:gap-[40px] lglaptop:gap-[50px]
+                py-[20px] xltablet:py-[24px] lglaptop:py-[30px]
+                px-[30px] xltablet:px-[40px] lglaptop:px-[50px]
+                ">
+
+                  <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
+                    <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">01</h4>
+                    <p>Introduction</p> 
+                  </div>
+                  <div className="border border-white95 w-[100%] h-[1px] xltablet:w-[1px] xltablet:h-[100%]"></div>
+
+                  <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
+                    <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">02</h4>
                     <p>Introduction</p>
                   </div>
-                  <div>
-                    <h4>02</h4>
+                  <div className="border w-[100%] h-[1px] xltablet:w-[1px] xltablet:h-[100%]"></div>
+
+                  <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
+                    <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">03</h4>
                     <p>Introduction</p>
                   </div>
-                  <div>
-                    <h4>03</h4>
+                  <div className="border w-[100%] h-[1px] xltablet:w-[1px] xltablet:h-[100%]"></div>
+
+                  <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
+                    <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">04</h4>
                     <p>Introduction</p>
                   </div>
-                  <div>
-                    <h4>04</h4>
+                  <div className="border w-[100%] h-[1px] xltablet:w-[1px] xltablet:h-[100%]"></div>
+
+                  <div className="grid gap-[12px] xltablet:gap-[16px] lglaptop:gap-[20px]">
+                    <h4 className="text-[30px] xltablet:text-[40px] lglaptop:text-[50px] font-extrabold">05</h4>
                     <p>Introduction</p>
                   </div>
-                  <div>
-                    <h4>05</h4>
-                    <p>Introduction</p>
-                  </div>
+
                 </div>
               </div>
             </div>
