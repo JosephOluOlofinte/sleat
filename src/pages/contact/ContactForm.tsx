@@ -36,13 +36,15 @@ const ContactForm = () => {
                       <input type="text" name="email-subject" id="" placeholder="Enter message subject" className='w-full p-[20px] lglaptop:p-[24px] bg-white99 outline outline-1 outline-white90 rounded-lg laptop:rounded-lg text-grey40 placeholder-grey40 focus:outline-orange70' /></label>
                       
                       <label htmlFor="email-message" className="grid gap-[12px] lglaptop:gap-[16px]"><p>Message</p>
-                      <textarea name="email-message" id="" placeholder="Enter your message" rows={6} className='resize-none w-full p-[20px] lglaptop:p-[24px] bg-white99 outline outline-1 outline-white90 rounded-lg laptop:rounded-lg text-grey40 placeholder-grey40 focus:outline-orange70' /></label>
+                      <textarea name="email-message" id="" placeholder="Enter your message" rows={5} className='resize-none w-full p-[20px] lglaptop:p-[24px] bg-white99 outline outline-1 outline-white90 rounded-lg laptop:rounded-lg text-grey40 placeholder-grey40 focus:outline-orange70' /></label>
                     </div>
                     <Button type="submit" text="Send your Message" className='self-center'/>
                   </form>
                 </div>
 
-                <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div>
+                {/* <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div> */}
+
+                <div className="bg-white90 h-[1px] laptop:h-[100%] laptop:w-[1px]"></div>
 
                 <div className='p-[30px] xltablet:p-[60px] lglaptop:p-[80px]'>
                   kjsdvkjsfkj

@@ -113,7 +113,7 @@ const CourseDataCard: React.FC<iCourseDataCard> = ({
 
                   {/* Render thin line ONLY if it's NOT the last item */}
                   {index < curriculum.length - 1 && (
-                    <div className="border-t-[1.5px] xltablet:border-l-[1.5px] border-white90 w-[100%] h-[1px] xltablet:w-0 xltablet:h-[100%]"></div>
+                    <div className="bg-white90 h-[1px] xltablet:h-[100%] xltablet:w-[1px]"></div>
                   )}
                 </>
                 
