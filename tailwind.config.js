@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   theme: {
     screens: {
       'mobile': '390px',
@@ -12,7 +13,7 @@ export default {
       'xltablet': '768px',
       'laptop': '1024px',
       'lglaptop': '1280px',
-      'desktop': '1920px',
+      'desktop': '1920px', 
     },
     extend: {
       fontFamily: {
