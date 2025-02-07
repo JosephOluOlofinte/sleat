@@ -11,7 +11,7 @@ const ContactForm = () => {
               <div className="
               bg-absoluteWhite
               h-fit w-[90%] desktop:w-[80%]
-              border-b-[1px] border-white90 
+              border-b-[1px] border-white90 rounded-[12px]
               grid grid-flow-col laptop:grid-flow items-center gap-[16px] laptop:gap-[80px] lglaptop:gap-[100px]">
                 
                 <div className='p-[30px] xltablet:p-[60px] lglaptop:p-[80px]'>
@@ -37,7 +37,7 @@ const ContactForm = () => {
                       <label htmlFor="email-message"><p>Message</p>
                       <textarea name="email-message" id="" placeholder="Enter your message" rows={4} className='resize-none w-full' /></label>
                     </div>
-                    <Button type="submit" text="Send your Message"/>
+                    <Button type="submit" text="Send your Message" className='self-center'/>
                   </form>
                 </div>
 
