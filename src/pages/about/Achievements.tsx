@@ -8,12 +8,14 @@ import icon3 from "../../assets/icons/about-icons/icon3.png";
 import icon4 from "../../assets/icons/about-icons/icon4.png";
 
 
+type Id = {
+  id?: string;
+}
 
-
-const Achievements = () => {
+const Achievements = ({id}:Id) => {
   return (
     <Fragment>
-      <section className="
+      <section id={id} className="
       my-[50px] xltablet:my-[80px] lglaptop:my-[100px]
       flex justify-center items-center">
 

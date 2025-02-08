@@ -1,10 +1,16 @@
 import { Fragment } from 'react'
 import { Button } from '../../components'
 
-const Together = () => {
+
+type Id = {
+    id?: string;
+  }
+  
+
+const Together = ({ id }: Id) => {
     return (
       <Fragment>
-          <section className="min-h-[10vh] w-[100%] flex justify-center mt-[70px]">
+          <section id={id} className="min-h-[10vh] w-[100%] flex justify-center mt-[70px]">
               <div className="h-[100%] w-[90%] desktop:w-[80%] grid grid-cols-1 gap-[50px] bg-absoluteWhite laptop:p-[50px] lglaptop:p-[60px] p-[30px]">
 
                     <div className="max-laptop:grid max-laptop:gap-8 laptop:flex laptop:justify-between laptop:items-center laptop:gap-[200px]">

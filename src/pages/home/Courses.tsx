@@ -11,11 +11,16 @@ import frontend from "../../assets/img/frontend-dev.png"
 import advJavascript from "../../assets/img/advanced-javascript.png"
 
 
+// to assign id to section so I can link to 
+// the section as in .../#courses
+type Id = {
+  id?: string;
+}
 
-const Courses = () => {
+const Courses = ({ id }: Id) => {
   return (
     <Fragment>
-        <section className="min-h-[100vh] w-[100%] flex justify-center mt-[70px]">
+        <section id={id} className="min-h-[100vh] w-[100%] flex justify-center mt-[70px]">
             <div className="h-[100%] w-[90%] desktop:w-[80%] grid grid-cols-1 gap-[50px] ">
               <div className="grid gap-[10px]">
                 <h2 className="font-semibold text-grey15">Our Courses</h2>

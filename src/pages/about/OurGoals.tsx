@@ -7,10 +7,15 @@ import icon6 from "../../assets/icons/about-icons/icon6.png";
 import icon7 from "../../assets/icons/about-icons/icon7.png";
 import icon8 from "../../assets/icons/about-icons/icon8.png";
 
-const OurGoals = () => {
+
+type Id = {
+  id?: string;
+}
+
+const OurGoals = ({ id }: Id) => {
   return (
     <Fragment>
-      <section className="
+      <section id={id} className="
       my-[50px] xltablet:my-[80px] lglaptop:my-[100px]
       flex justify-center items-center">
 

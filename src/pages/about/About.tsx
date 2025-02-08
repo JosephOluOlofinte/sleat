@@ -3,10 +3,15 @@
 import { Fragment } from "react/jsx-runtime"
 
 
-const About = () => {
+type Id = {
+  id?: string;
+}
+
+
+const About = ({ id }: Id) => {
   return (
     <Fragment>
-        <main className="
+        <main id={id} className="
         my-[50px] xltablet:my-[80px] lglaptop:my-[100px]
         flex justify-center items-center
         ">

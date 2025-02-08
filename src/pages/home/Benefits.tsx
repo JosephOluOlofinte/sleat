@@ -5,12 +5,16 @@ import Button from "../../components/block/Button"
 import BenefitsCard from "../../components/block/BenefitsCard"
 
 
+// to assign id to section so I can link to 
+// the section as in .../#benefits
+type Id = {
+  id?: string;
+}
 
-
-const Benefits = () => {
+const Benefits = ({ id }: Id) => {
   return (
     <Fragment>
-        <section className="min-h-[40vh] w-[100%] flex justify-center mt-[70px]">
+        <section id={id} className="min-h-[40vh] w-[100%] flex justify-center mt-[70px]">
             <div className="h-[100%] w-[90%] desktop:w-[80%] grid grid-cols-1 gap-[50px]">
               <div className="grid gap-[10px]">
                 <h2 className="font-semibold text-grey15">Benefits</h2>

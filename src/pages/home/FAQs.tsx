@@ -5,11 +5,16 @@ import { Button } from "../../components"
 import Accordion from "../../components/block/Accordion"
 
 
+// to assign id to section so I can link to 
+// the section as in .../#faqs
+type Id = {
+  id?: string;
+}
 
-const FAQs = () => {
+const FAQs = ({ id }: Id) => {
   return (
     <Fragment>
-        <section className="min-h-[40vh] w-[100%] flex justify-center mt-[70px]">
+        <section id={id} className="min-h-[40vh] w-[100%] flex justify-center mt-[70px]">
             <div className="
           bg-absoluteWhite  rounded-[10px]
             h-[100%] w-[90%] desktop:w-[80%]

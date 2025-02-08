@@ -1,6 +1,7 @@
 // import React from 'react'
 
-
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Fragment } from "react/jsx-runtime"
 import Hero from "./Hero"
 import Image from "./Image"
@@ -14,6 +15,21 @@ import { Helmet } from "react-helmet-async"
 
 
 const HomeComp = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const sectionId = location.hash.replace("#", "");
+      setTimeout(() => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100); // Delay to ensure sections are rendered
+    }
+  }, [location]);
+
   return (
     <Fragment>
       <Helmet>
@@ -22,11 +38,11 @@ const HomeComp = () => {
       </Helmet>
       <Hero />
       <Image />
-      <Benefits />
-      <Courses />
-      <Testimonials />
+      <Benefits id="benefits" />
+      <Courses id="courses" />
+      <Testimonials id="testimonials" />
       <Pricing />
-      <FAQs />
+      <FAQs id="faqs" />
     </Fragment>
   )
 }
