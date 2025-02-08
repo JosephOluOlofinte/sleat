@@ -21,8 +21,8 @@ export const element = createBrowserRouter ([
             { path: "/pricing", element: <Pricing /> },
             { path: "/courses", element: <CoursesComp /> },
             { path: "/contact-us", element: <Contact /> },
-            { path: "/sign-in", element: <Login /> },
-            { path: "/sign-up", element: <Register /> },
+            { path: "/auth/sign-in", element: <Login /> },
+            { path: "/auth/sign-up", element: <Register /> },
         ],
     },
 

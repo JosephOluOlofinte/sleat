@@ -120,13 +120,13 @@ const Header = () => {
             xltablet:gap-[20px]
             desktop:gap-[25px]
             ">
-              <NavLink to="/sign-up">
+              <NavLink to="/auth/sign-up">
                 <button className="
                 h-[45px]
                 laptop:h-[55px]
                 ">Sign Up</button>
               </NavLink>
-              <NavLink to="/sign-in">
+              <NavLink to="/auth/sign-in">
                 <button className="
                 bg-orange50
                 rounded-[5px]

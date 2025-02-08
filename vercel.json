@@ -6,6 +6,9 @@
         { "src": "/", "dest": "/" },
         { "src": "/about", "dest": "/" },
         { "src": "/pricing", "dest": "/" },
-        { "src": "/courses", "dest": "/" }
+        { "src": "/courses", "dest": "/" },
+        { "src": "/contact-us", "dest": "/" },
+        { "src": "/auth/sign-in", "dest": "/" },
+        { "src": "/auth/sign-up", "dest": "/" }
     ]
 }

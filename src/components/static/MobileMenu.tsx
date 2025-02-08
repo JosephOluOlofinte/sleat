@@ -71,10 +71,10 @@ const MobileMenu: React.FC<iMobileMenu> = ({onClick}) => {
             h-[45px]
             pt-[40px] pb-[25px]
             ">
-                <NavLink to="/sign-up" onClick={onClick}>
+                <NavLink to="/auth/sign-up" onClick={onClick}>
                 <Button text='Sign Up' size='large' variant="whiteBtn" className='border-[1px] border-orange50 hover:bg-orange90' />
                 </NavLink>
-                <NavLink to="/sign-in" onClick={onClick}>
+                <NavLink to="/auth/sign-in" onClick={onClick}>
                 <Button text="Sign In" size="large" className='border-[1px] border-orange50' />
                 </NavLink>
             </div>

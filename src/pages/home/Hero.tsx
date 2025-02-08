@@ -109,12 +109,8 @@ const Hero = () => {
               #hero-buttons
               flex flex-col tablet:flex-row tablet:gap-[20px] justify-center items-center gap-[30px] flex-wrap
               '>
-                <a href="">
-                  <Button text="Explore Courses" size="large" />       
-                </a>
-                <a href="">
-                  <Button text="View Pricing" variant="secondary"  size="large" />
-                </a>
+                <Button text="Explore Courses" size="large" url='/courses'/>       
+                <Button text="View Pricing" variant="secondary"  size="large" url='/pricing' />
               </div>
             </div>
           </div>  
