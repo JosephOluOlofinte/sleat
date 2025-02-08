@@ -63,7 +63,7 @@ const Footer = () => {
             <div className="grid gap-[15px] lglaptop:gap-[20px] h-fit w-fit">
                 <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">About Us</h3>
                 <ul className="grid gap-[10px]">
-                  <li><Link to="/about#services"><span className="text-orange50">•</span> Company </Link></li>
+                  <li><Link to="/about#company"><span className="text-orange50">•</span> Company </Link></li>
                   <li><Link to="/about#achievements"><span className="text-orange50">•</span> Achievements </Link></li>
                   <li><Link to="/about#goals"><span className="text-orange50">•</span> Our Goals</Link></li>
                 </ul>
