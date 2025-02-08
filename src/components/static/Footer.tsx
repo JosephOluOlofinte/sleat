@@ -1,5 +1,6 @@
 // import React from 'react'
 
+import { Link } from "react-router-dom";
 import { Fragment } from "react/jsx-runtime";
 import Logo from "../../assets/img/Logo.png";
 import Facebook from "../../assets/icons/facebook.png";
@@ -47,23 +48,24 @@ const Footer = () => {
               </ul>
             </div>
             
-              
+              {/* HOME */}
             <div className="grid gap-[15px] lglaptop:gap-[20px] h-fit">
                 <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">Home</h3>
                 <ul className="grid gap-[10px] pl-1">
-                  <li><span className="text-orange50">•</span> Benefits</li>
-                  <li><span className="text-orange50">•</span> Our Courses</li>
-                  <li><span className="text-orange50">•</span> Our Testimonials</li>
-                  <li><span className="text-orange50">•</span> FAQs</li>
+                  <li><Link to="/#benefits"><span className="text-orange50">•</span> Benefits</Link></li>
+                  <li><Link to="/#courses"><span className="text-orange50">•</span> Our Courses</Link></li>
+                  <li><Link to="/#testimonials"><span className="text-orange50">•</span> Our Testimonials</Link></li>
+                  <li><Link to="/#faqs"><span className="text-orange50">•</span> FAQs </Link></li>
                 </ul>
             </div>
 
+            {/* ABOUT US */}
             <div className="grid gap-[15px] lglaptop:gap-[20px] h-fit">
                 <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">About Us</h3>
                 <ul className="grid gap-[10px]">
-                  <li><span className="text-orange50">•</span> Company</li>
-                  <li><span className="text-orange50">•</span> Achivements</li>
-                  <li><span className="text-orange50">•</span> Our Goals</li>
+                  <li><Link to="/about#services"><span className="text-orange50">•</span> Company </Link></li>
+                  <li><Link to="/about#achievements"><span className="text-orange50">•</span> Achievements </Link></li>
+                  <li><Link to="/about#goals"><span className="text-orange50">•</span> Our Goals</Link></li>
                 </ul>
             </div>
 
