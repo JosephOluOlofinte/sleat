@@ -19,9 +19,9 @@ const Footer = () => {
 
           <div className="
           h-[100%] w-[100%] border-b-[1px] pb-4
-          grid grid-cols-2 laptop:grid-cols-4 gap-8 justify-between">
+          grid grid-cols-2 laptop:grid-cols-[auto_auto_auto_auto] gap-8 justify-between">
 
-            <div className="grid gap-[15px] lglaptop:gap-[20px] h-fit">
+            <div className="grid gap-[15px] lglaptop:gap-[20px] h-fit w-fit">
               <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">Contact</h3>
               <ul className="grid h-fit gap-2">
                 <li className="flex gap-2 items-center w-max">
@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
             
               {/* HOME */}
-            <div className="grid gap-[15px] lglaptop:gap-[20px] h-fit">
+            <div className="grid gap-[15px] lglaptop:gap-[20px] h-fit w-fit">
                 <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">Home</h3>
                 <ul className="grid gap-[10px] pl-1">
                   <li><Link to="/#benefits"><span className="text-orange50">•</span> Benefits</Link></li>
@@ -60,7 +60,7 @@ const Footer = () => {
             </div>
 
             {/* ABOUT US */}
-            <div className="grid gap-[15px] lglaptop:gap-[20px] h-fit">
+            <div className="grid gap-[15px] lglaptop:gap-[20px] h-fit w-fit">
                 <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">About Us</h3>
                 <ul className="grid gap-[10px]">
                   <li><Link to="/about#services"><span className="text-orange50">•</span> Company </Link></li>
@@ -69,6 +69,7 @@ const Footer = () => {
                 </ul>
             </div>
 
+            {/* SOCIAL PROFILES */}
             <div className="grid gap-[15px] lglaptop:gap-[20px] h-fit w-fit">
                 <h3 className="text-[18px] lglaptop:text-[20px] font-semibold">Social Profiles</h3>
                 <div className="grid grid-flow-col gap-[15px]">
