@@ -152,12 +152,12 @@ const Header = () => {
                       backdrop-saturate-[180%]
                       bg-[rgba(255,255,0,0.015)]
                       ${showDropdown ? 'translate-x-0' : '-translate-x-[130%]'}
-                      transition-all ease-in-out duration-[1.2s]
+                      transition-all ease-in-out duration-[1.1s]
                       `} onClick={dropdown}>
                     </div>
 
                     
-                    <div className={`z-30 ${showDropdown ? 'translate-x-0' : 'translate-x-[130%]'} fixed top-[5px] right-0 transition-all ease-in-out duration-[1s]`}>
+                    <div className={`z-30 ${showDropdown ? 'translate-x-0' : 'translate-x-[130%]'} fixed top-[5px] right-0 transition-all ease-in-out duration-[1.2s]`}>
                       <div className={`rounded-[10px] w-[300px] h-[99vh] bg-absoluteWhite pl-[30px] pt-[15px] pb-[30px] shadow-[5px_10px_30px_-5px_rgba(255,149,0,0.2)]`}>
 
                         <div className="
