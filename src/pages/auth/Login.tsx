@@ -19,7 +19,7 @@ const Login = () => {
                   <div className="grid gap-[40px]">
                     <div className="grid gap-[15px]">
                       <h2>Students Testimonials</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                      <p className="font-normal text-grey30">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                     </div>
                     <div className="grid gap-[20px]">
                     <TestimonialsCard 
@@ -28,7 +28,7 @@ const Login = () => {
                       img={sarahL} 
                       url='#' />
                       <div className="flex justify-end">
-                        <div className="flex gap-[20px]">
+                        <div className="flex gap-[10px] laptop:gap-[15px]">
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="bg-absoluteWhite size-[50px] rounded-[8px] p-[12px] lglaptop:p-[14px]">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
                           </svg>
@@ -42,11 +42,16 @@ const Login = () => {
                   </div>
 
                   <div>
-                    <div>
+                    <div className="text-center grid gap-[10px]">
                       <h1>Sign In</h1>
-                      <p>Welcome back! Please log in to access your account.</p>
+                      <p className="text-grey30">Welcome back! Please log in to access your account.</p>
                     </div>
-                    <div></div>
+                    <div>
+                      <form action=""></form>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
                   </div>
                 </div>
               </section>
