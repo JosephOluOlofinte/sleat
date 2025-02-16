@@ -41,14 +41,19 @@ const Login = () => {
                     </div>
                   </div>
 
-                  <div>
+                  <div className="grid gap-[30px] laptop:gap-[40px]">
                     <div className="text-center grid gap-[10px]">
                       <h1>Sign In</h1>
                       <p className="text-grey30">Welcome back! Please log in to access your account.</p>
                     </div>
+
                     <div>
                       <form action=""></form>
-                      <div></div>
+                      <div className="grid grid-cols-[1fr_auto_1fr] gap-2 items-center">
+                        <div className="h-[1px] bg-white90"></div>
+                        <p>OR</p>
+                        <div className="h-[1px] bg-white90"></div>
+                      </div>
                       <div></div>
                       <div></div>
                     </div>
