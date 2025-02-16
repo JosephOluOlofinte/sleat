@@ -41,7 +41,7 @@ const Login = () => {
                     </div>
                   </div>
 
-                  <div className="grid gap-[30px] laptop:gap-[40px]">
+                  <div className="grid gap-[30px] laptop:gap-[40px] bg-absoluteWhite rounded-[10px] p-[30px] laptop:p-[40px]">
                     <div className="text-center grid gap-[10px]">
                       <h1>Sign In</h1>
                       <p className="text-grey30">Welcome back! Please log in to access your account.</p>
