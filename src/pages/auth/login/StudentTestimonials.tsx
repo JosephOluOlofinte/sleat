@@ -7,7 +7,7 @@ import sarahL from '../../../assets/img/sarah-L.png'
 const StudentTestimonials = () => {
   return (
     <Fragment>
-        <div className="grid gap-[40px] flex-1">
+        <div className="grid gap-[40px] flex-1 max-h-fit">
             <div className="grid gap-[15px]">
                 <h2>Students Testimonials</h2>
                 <p className="font-normal text-grey30">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
