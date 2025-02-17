@@ -1,6 +1,7 @@
 // import React, { Fragment } from 'react'
 
 import { Fragment } from "react/jsx-runtime"
+import { Button } from "../../../components"
 
 const SigninForm = () => {
   return (
@@ -46,13 +47,17 @@ const SigninForm = () => {
                       <input type="checkbox" name="rememberMe" id="rememberMe" className="hidden peer" />
                       <p className="text-grey40">Remember Me</p>
                       <div className="text-white95 border border-white90 peer-checked:text-grey30  transition-colors duration-500 size-6 lglaptop:size-8 rounded bg-white95 flex items-center justify-center font-bold"> ✓ </div>
-                    </label>                    
+                    </label>
+
+                    <Button type='submit' text="Sign In" size="large" className="w-full"/>   
+                              
                   </div>
                 </form>
+
                 <div className="grid grid-cols-[1fr_auto_1fr] gap-2 items-center">
-                <div className="h-[1px] bg-white90"></div>
-                <p>OR</p>
-                <div className="h-[1px] bg-white90"></div>
+                  <div className="h-[1px] bg-white90"></div>
+                  <p>OR</p>
+                  <div className="h-[1px] bg-white90"></div>
                 </div>
                 <div></div>
                 <div></div>
