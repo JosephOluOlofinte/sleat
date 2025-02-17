@@ -2,6 +2,7 @@
 
 import { Fragment } from "react/jsx-runtime"
 import { Button } from "../../../components"
+import { NavLink } from "react-router-dom"
 
 const SigninForm = () => {
   return (
@@ -12,7 +13,7 @@ const SigninForm = () => {
                 <p className="text-grey30">Welcome back! Please log in to access your account.</p>
             </div>
 
-            <div>
+            <div className="grid gap-[30px] lglaptop:gap-[35px]">
                 <form action="">
                   <div className='grid gap-[25px] xltablet:gap-[30px] lglaptop:gap-[40px]'>
 
@@ -50,17 +51,20 @@ const SigninForm = () => {
                     </label>
 
                     <Button type='submit' text="Sign In" size="large" className="w-full"/>   
-                              
+
                   </div>
                 </form>
 
                 <div className="grid grid-cols-[1fr_auto_1fr] gap-2 items-center">
                   <div className="h-[1px] bg-white90"></div>
-                  <p>OR</p>
+                  <p className="text-grey60">OR</p>
                   <div className="h-[1px] bg-white90"></div>
                 </div>
-                <div></div>
-                <div></div>
+
+                <Button variant="greyBtn" size="large" className="font-light">Login with Google</Button>
+                <div>
+                  <p>Don't have an account? <NavLink to="/sign-up">Sign Up</NavLink> </p>
+                </div>
             </div>
         </div>
     </Fragment>
