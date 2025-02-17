@@ -11,7 +11,7 @@ const Signin = () => {
             <div className="
             h-fit w-[90%] desktop:w-[80%]
             border-b-[1px] border-white95 rounded-[12px]
-            grid grid-flow-row laptop:grid-flow-col laptop:grid-cols-[1fr_1fr] gap-[16px] laptop:gap-[60px] lglaptop:gap-[80px]">
+            flex flex-col gap-[50px] xltablet:flex-row-reverse laptop:gap-[60px] lglaptop:gap-[80px]">
 
                 <SigninForm />
                 <StudentTestimonials />
