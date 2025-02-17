@@ -7,7 +7,7 @@ import AboutComp from "../pages/about/AboutComp";
 import Pricing from "../pages/pricing/Pricing"
 import CoursesComp from "../pages/courseslist/CoursesComp";
 import Contact from "../pages/contact/Contact";
-import Login from "../pages/auth/Login";
+import Signin from "../pages/auth/login/Signin";
 import Register from "../pages/auth/Register";
 
 export const element = createBrowserRouter ([
@@ -21,7 +21,7 @@ export const element = createBrowserRouter ([
             { path: "/pricing", element: <Pricing /> },
             { path: "/courses", element: <CoursesComp /> },
             { path: "/contact-us", element: <Contact /> },
-            { path: "/auth/sign-in", element: <Login /> },
+            { path: "/auth/sign-in", element: <Signin /> },
             { path: "/auth/sign-up", element: <Register /> },
         ],
     },

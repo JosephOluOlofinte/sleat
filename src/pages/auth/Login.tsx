@@ -48,7 +48,15 @@ const Login = () => {
                     </div>
 
                     <div>
-                      <form action=""></form>
+                      <form action="">
+                      <div className='grid gap-[25px] xltablet:gap-[30px] lglaptop:gap-[40px]'>
+                        <label htmlFor="first-name" className="grid gap-[12px] lglaptop:gap-[16px]"><p className='pl-[10px]'>First name</p>
+                        <input type="text" name="first-name" id="" placeholder="Enter first name" className='w-full p-[16px] lglaptop:p-[20px] bg-white99 outline outline-1 outline-white90 rounded-lg laptop:rounded-lg text-grey40 placeholder-grey40 focus:outline-orange70' /></label>
+
+                        <label htmlFor="last-name" className="grid gap-[12px] lglaptop:gap-[16px]"><p className='pl-[10px]'>Last name</p>
+                        <input type="text" name="last-name" id="" placeholder="Enter last name" className='w-full p-[16px] lglaptop:p-[20px] bg-white99 outline outline-1 outline-white90 rounded-lg laptop:rounded-lg text-grey40 placeholder-grey40 focus:outline-orange70' /></label>
+                      </div>
+                      </form>
                       <div className="grid grid-cols-[1fr_auto_1fr] gap-2 items-center">
                         <div className="h-[1px] bg-white90"></div>
                         <p>OR</p>
