@@ -62,8 +62,15 @@ const SigninForm = () => {
                 </div>
 
                 <Button variant="greyBtn" size="large" className="font-light">Login with Google</Button>
-                <div>
-                  <p>Don't have an account? <NavLink to="/sign-up">Sign Up</NavLink> </p>
+                <div className="flex justify-center items-center gap-[6px]">
+                  <p>Don't have an account? 
+                  </p>
+                  <NavLink to="/auth/sign-up" className="flex items-baseline gap-[4px] font-medium">
+                    <p className="underline">Sign Up</p> 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="size-4 font-medium">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                  </NavLink> 
                 </div>
             </div>
         </div>
