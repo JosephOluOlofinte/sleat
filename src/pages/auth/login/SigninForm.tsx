@@ -62,7 +62,7 @@ const SigninForm = () => {
                   <div className="h-[1px] bg-white90"></div>
                 </div>
 
-                <Button variant="greyBtn" size="large" className="font-light flex items-center justify-center">
+                <Button variant="greyBtn" size="large" className="font-light flex gap-[10px] items-center justify-center">
                   <div className="size-6 laptop:size-7"><img src={google} alt="" /></div>
                   <p>Login with Google</p></Button>
                 <div className="flex justify-center items-center gap-[6px]">
