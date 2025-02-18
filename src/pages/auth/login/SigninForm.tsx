@@ -3,6 +3,7 @@
 import { Fragment } from "react/jsx-runtime"
 import { Button } from "../../../components"
 import { NavLink } from "react-router-dom"
+import google from "../../../assets/icons/google.png"
 
 const SigninForm = () => {
   return (
@@ -61,13 +62,14 @@ const SigninForm = () => {
                   <div className="h-[1px] bg-white90"></div>
                 </div>
 
-                <Button variant="greyBtn" size="large" className="font-light">Login with Google</Button>
+                <Button variant="greyBtn" size="large" className="font-light flex items-center justify-center">
+                  <div className="size-6 laptop:size-7"><img src={google} alt="" /></div>
+                  <p>Login with Google</p></Button>
                 <div className="flex justify-center items-center gap-[6px]">
-                  <p>Don't have an account? 
-                  </p>
+                  <p>Don't have an account?</p>
                   <NavLink to="/auth/sign-up" className="flex items-baseline gap-[4px] font-medium">
                     <p className="underline">Sign Up</p> 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="size-4 font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="size-4 laptop:size-5 font-medium">
                       <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                     </svg>
                   </NavLink> 
