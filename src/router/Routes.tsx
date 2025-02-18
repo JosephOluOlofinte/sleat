@@ -7,7 +7,7 @@ import AboutComp from "../pages/about/AboutComp";
 import Pricing from "../pages/pricing/Pricing"
 import CoursesComp from "../pages/courseslist/CoursesComp";
 import Contact from "../pages/contact/Contact";
-import Signin from "../pages/auth/login/Signin";
+import Signin from "../pages/auth/signin/Signin";
 import Register from "../pages/auth/Register";
 
 export const element = createBrowserRouter ([
