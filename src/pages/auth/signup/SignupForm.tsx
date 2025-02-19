@@ -27,8 +27,8 @@ const SignupForm = () => {
                     </label>
 
                     <label className="grid gap-[12px] lglaptop:gap-[16px]"><p className='pl-[10px]'>Pick a Track</p>
-                        <select name="track" className="w-[60%] p-[16px] lglaptop:p-[20px] bg-white99 outline outline-1 outline-white90 rounded-lg laptop:rounded-lg text-grey40 placeholder-grey40 focus:outline-orange70">
-                            <option value="Web Design Fundamentals">Web Design Fundamentals</option>
+                        <select name="track" className="form-select w-[60%] selection: p-[16px] lglaptop:p-[20px] bg-white99 outline outline-1 outline-white90 rounded-lg laptop:rounded-lg text-grey40 placeholder-grey40 focus:outline-orange70">
+                            <option value="Web Design Fundamentals" className="bg-slate-300 m-0">Web Design Fundamentals</option>
                             <option value="UI/UX Design">UI/UX Design</option>
                             <option value="Mobile App Development">Mobile App Development</option>
                             <option value="Graphics Design">Graphics Design for Beginners</option>
