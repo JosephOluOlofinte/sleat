@@ -1,8 +1,8 @@
 // import React from 'react'
 
 import { Fragment } from "react/jsx-runtime"
-import { TestimonialsCard } from "../../../components"
-import sarahL from '../../../assets/img/sarah-L.png'
+import { TestimonialsCard } from "../../components"
+import sarahL from '../../assets/img/sarah-L.png'
 
 const StudentTestimonials = () => {
   return (

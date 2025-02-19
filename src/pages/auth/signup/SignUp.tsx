@@ -2,9 +2,9 @@
 
 import { Fragment } from "react/jsx-runtime"
 import StudentTestimonials from "../StudentTestimonials"
-import SigninForm from "./SigninForm"
+import SignupForm from "./SignupForm"
 
-const Signin = () => {
+const SignUp = () => {
   return (
     <Fragment>
         <main className="mt-[50px] xltablet:mt-[80px] lglaptop:mt-[100px] flex justify-center items-center">
@@ -13,7 +13,7 @@ const Signin = () => {
             border-b-[1px] border-white95 rounded-[12px]
             flex flex-col gap-[50px] xltablet:flex-row-reverse xltablet:items-center laptop:gap-[60px] lglaptop:gap-[80px]">
 
-                <SigninForm />
+                <SignupForm />
                 <StudentTestimonials />
                 
             </div>
@@ -22,4 +22,4 @@ const Signin = () => {
   )
 }
 
-export default Signin
+export default SignUp
